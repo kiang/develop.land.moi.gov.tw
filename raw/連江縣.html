@@ -1,0 +1,289 @@
+
+
+
+	<div class="row">
+		<div class="col-xs-12" >
+			<script>
+				ol2d.clearPosvectorLayerFeature();
+				ol2d.posvectorLayer.setZIndex(1000);
+			</script>
+			<table id="developmentZone_list_id" width="100%" class="table table-bordered table-striped u10_table vm table-fit" style="width:100%">
+				<thead>
+					<tr>
+						<th nowrap scope="col" class="hidden-md hidden-sm hidden-xs" style="white-space:nowrap">年度</th>
+						<th nowrap scope="col" style="white-space:nowrap"><span class="hidden-md hidden-sm hidden-xs" style="display:none">案件<br></span>狀態</th>
+						<th nowrap scope="col" style="white-space:nowrap">縣市</th>
+						<th nowrap scope="col">案件名稱</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>				
+			
+				</tbody>
+			</table>
+			<!-- <input type="button" class="btn btn-primary font"  value="回條件" id="" onclick='collapsedDown($("#dev_query_panel")); '> -->
+		</div>
+	</div>
+
+<script>
+var devname,devstatus;
+var table;
+	$(function() {	
+		$(".exkml").attr('title',dchelp2);
+		$("#dev_query_panel").trigger('click');
+		$("#page-content-wrapper").fadeIn();
+		//loadDcKml('GKG8809015991');
+		ol2d.addSelectInteraction();
+			
+		setTimeout(function(){ initDataTable();}, 300);
+		
+		$("#developmentZone_list_id tbody").on('click', 'tr',function() {				
+			var jqTr = $(this).closest("tr");
+			//alert(jqTr.attr("lon"));
+			if(jqTr.attr("lon")!="" && jqTr.attr("lat")!=""){
+				ol2d.setCenter(parseFloat(jqTr.attr("lon")),parseFloat(jqTr.attr("lat")));
+				ol2d.setZoom(12);
+			}
+		});
+	});
+	
+	
+	
+	
+	
+	
+	/**
+	 * 下載開發案件範圍圖KML。
+	 */
+	function dlDcKml(pjId) {
+		if(pjId==null) {
+			console.log("請指定案件ID");
+			return;
+		}
+		var mydata = {
+			"pjId" : pjId
+		};
+		var opt = {
+				"url" : "./DcDl_dlDcKml",
+				"data" : mydata,
+				"done" : null,
+				"fail" : function(){alert("尚未編輯開發區範圍圖!")},
+				"quiet" : false
+		};	
+		qtAjax.dlAtt(opt);
+	}
+	
+	
+	function initDataTable(){		
+		var sheight=$(document).height()-270;
+		calcModalBody();
+		var opt ={
+	 			language : {  
+					info: "顯示 _START_ 至 _END_ 筆  (查詢結果 : _TOTAL_ 筆) <input type=\"button\" style=\"padding-top:0.2em;padding-bottom:0.1em;\" class=\"btn btn-primary font\"  value=\"地圖\" id=\"\" onclick='$(\"#developmentZoneModal .close\").click(); '>" ,
+					emptyTable : "無資料" ,
+					infoEmpty: "顯示  0 筆資料",
+				},
+				info : true, 
+	            deferRender:    true,
+	            scrollY:        sheight,
+	            scrollCollapse: true,
+	            scroller:       true,
+	            paging: true, 
+	            autoWidth: false,
+	            "lengthChange" : false, 
+	            "iDisplayLength": 10,
+	            searching : false,
+	            "order": [[ 0, "desc" ]],
+	            ordering: true,	            
+	            columnDefs: [{
+	            	"targets": 4,
+	            	"orderable": false,
+	            	
+	            },{ targets: [ 1 ],orderData: [ 1, 0 ]}],
+	 	    	dom:"<'row'<'col-sm-4'i><'col-sm-4'f><'col-sm-4'p>>" +
+		    	"<'row'<'col-sm-12'tr>>" ,
+		    } 
+//		qtCommon.dataTables('developmentZone_list_id' , opt) ;		
+		table=qtCommon.dataTablesScroller('developmentZone_list_id' , opt) ;
+		setTimeout(function() { table.draw(true); }, 500);
+		$('.dataTables_scrollBody').unbind('scroll');
+		$('.dataTables_scrollBody').on('scroll', function() {
+		    if(!$("#dev_query_panel").hasClass("panel-collapsed")){
+		    	$("#dev_query_panel").trigger('click');		    	
+		    }
+		});
+		$('#tab_d1').scrollTop(150);		
+		$("#btn_developmentZone_search_id").show();
+		/*
+		var features = ol2d.posvectorLayer.getSource().getFeatures();
+		var collection = ol2d.select.getFeatures();
+		for (var i = 0, len = features.length; i < len; i++) {
+			var pos_type = features[i].get("pos_type");
+			console.log("features:"+pos_type); 
+			
+		}
+		//collection.push(features[0]);
+		ol2d.select.dispatchEvent({
+			  type: 'select',
+			  selected: [features[0]],
+			  deselected: []
+			});
+		*/
+	}
+	
+	
+	
+	function showPriceQuery(obj){		 
+		var jqTr = $(obj).closest("tr");
+		if(jqTr.attr("lon")!="" && jqTr.attr("lat")!=""){
+			ol2d.setCenter(parseFloat(jqTr.attr("lon")),parseFloat(jqTr.attr("lat")));
+			ol2d.setZoom(12);
+		}
+		//$("#queryPriceModal").showStackedModal();
+		showTopModalAndHideElse("queryPriceModal");
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</script>
+<style>
+#developmentZoneResultId .dataTables_paginate {
+	display: none;
+}
+
+.u10_table .dataTables_scrollHeadInner {
+	width: 100%;
+}
+
+.dev_list1 td {
+	vertical-align: middle !important;
+	padding: 4px !important;
+}
+
+.dataTables_scrollBody {
+	overflow-x: hidden !important;
+	min-height: 80px;
+}
+
+/* dataTables CSS modification & positioning */
+table.dataTable thead .sorting:before,table.dataTable thead .sorting_asc:before,table.dataTable thead .sorting_desc:before,table.dataTable thead .sorting_asc_disabled:before,table.dataTable thead .sorting_desc_disabled:before
+	{
+	font-family: FontAwesome;
+	content: "\f0dc";
+	right: 0.5em;
+	bottom: 0.5em;
+}
+
+table.dataTable thead th {
+	background-image: none !important;
+}
+
+table.dataTable thead .sorting_asc:before,table.dataTable thead .sorting_desc:after
+	{
+	opacity: 0.3
+}
+
+table.dataTable thead th.sorting:after,table.dataTable thead th.sorting_asc:after,table.dataTable thead th.sorting_desc:after
+	{
+	display: block;
+	font-family: FontAwesome;
+	content: "\f0de";
+}
+
+table.dataTable thead th.sorting:after {
+	content: "\f0de";
+	color: #ddd;
+}
+
+table.dataTable thead th.sorting_asc:after {
+	content: "\f0de";
+	right: 0.5em;
+	bottom: 0.5em;
+	opacity: 1;
+}
+
+table.dataTable thead th.sorting_desc:after {
+	content: "\f0dd";
+	right: 0.5em;
+	bottom: 0.5em;
+	opacity: 1;
+}
+
+.u10_table  thead>tr>th.sorting {
+	padding-right: 20px !important;
+}
+
+.u10_table thead > tr > th.sorting_asc,.u10_table thead > tr > th.sorting_desc{
+	padding-right: 20px !important;
+}
+.search_content_result .dataTables_info{
+	height:45px;
+}
+
+.panel-heading-active{
+background-image: linear-gradient(90deg, rgba(150, 150, 150, 0) 90%, rgba(110, 110, 110, 0.12) 100%);
+}
+@media screen and (min-width: 480px) {
+	#accordion .collapse{
+		max-height:100%;
+	}
+}
+@media screen and (max-width: 480px) {
+	#hor-zebra-d{
+		max-height: 999999px;
+	}
+	
+	#accordion .collapse{
+		max-height:400px
+	}
+	
+/*
+	text-size-adjust: none;
+	#hor-zebra-d{
+		text-align: center;	
+		text-size-adjust: none;
+		line-height: 2vh;
+	}
+	
+	#hor-zebra-d td{
+		font-size: 2vw;
+		line-height: 2vh;
+		font-family:Arial, "新細明體";
+	}
+	#hor-zebra-d .odd{
+		font-size: 2vw;
+		min-width: 7vw;
+	}
+	#hor-zebra-d .odd4{
+		font-size: 2vw;
+	}*/
+}
+@media screen and (max-width: 480px) {
+	.search_content_result .dataTables_info{
+		height:45px;
+	}
+	div.dataTables_wrapper div.dataTables_info{
+		padding-top:0.5em;
+		font-size:0.8em;	
+	}	
+	.ol-popup{
+		padding:5px 2px;
+	}
+	.border_btn_f{
+		padding: 2px;
+		height:45px;			
+	}	
+	#popup-closer{
+		display:block;
+		top:1em;
+	}
+}
+</style>

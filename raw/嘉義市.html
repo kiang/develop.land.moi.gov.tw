@@ -1,0 +1,869 @@
+
+
+
+	<div class="row">
+		<div class="col-xs-12" >
+			<script>
+				ol2d.clearPosvectorLayerFeature();
+				ol2d.posvectorLayer.setZIndex(1000);
+			</script>
+			<table id="developmentZone_list_id" width="100%" class="table table-bordered table-striped u10_table vm table-fit" style="width:100%">
+				<thead>
+					<tr>
+						<th nowrap scope="col" class="hidden-md hidden-sm hidden-xs" style="white-space:nowrap">年度</th>
+						<th nowrap scope="col" style="white-space:nowrap"><span class="hidden-md hidden-sm hidden-xs" style="display:none">案件<br></span>狀態</th>
+						<th nowrap scope="col" style="white-space:nowrap">縣市</th>
+						<th nowrap scope="col">案件名稱</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>				
+			
+				<tr seqatr="IWL6610537082" dev-name="嘉義市第一期港坪市地重劃區" status="4" lat="23.474224" lon="120.425061"  class="dev_list1"  casetype="B" style="cursor: pointer">
+					<td class="hidden-md hidden-sm hidden-xs">074&nbsp;</td>
+					<td nowrap>辦理完成</td>
+					<td nowrap>嘉義市</td>
+					<td align="left">
+					嘉義市第一期港坪市地重劃區
+					
+					
+					</td>
+					<td width="4em">
+					<input type="button" 
+						class="border_btn_b font btn-block developmentDetailCss" style="padding:2px;margin:0px"
+						value="明細" onclick="DZlist_click($(this));">
+					<input type="button" 
+						class="border_btn_b font btn-block developmentDetailCss hidden-md hidden-sm hidden-xs exkml" style="padding:2px;margin-left:0px"
+						value="匯出KML" onclick="dlDcKml('IWL6610537082');" title="">
+					</td>
+										
+					<script>
+					var htmlc='<table id="hor-zebra-e" style="width:195px;max-width: 420px;">';
+					htmlc=htmlc+'<tbody>';
+					htmlc=htmlc+'';
+					htmlc=htmlc+'<tr><td class="odd" colspan="2">嘉義市 嘉義市第一期港坪市地重劃區 <span class="hidden-md hidden-sm hidden-xs">市地重劃</SPAN><span class="hidden-md hidden-sm hidden-xs"> ';
+					
+					
+					
+					htmlc=htmlc+'－辦理完成';
+					
+					htmlc=htmlc+'</span></td></tr><tr lon="120.425061" lat="23.474224"><td colspan="2" class="qt-center">';					
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-1" title="範圍圖" style="margin-right: 5px;" onclick="loadDcKml(\'IWL6610537082\', \'4\', {synDpm : true});"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-2" title="導航" style="margin-right: 5px;" onclick="dcPosShowPathDialog(120.425061, 23.474224);"></a>';
+					//htmlc=htmlc+'<a href="DcDl_dlDcKml?pjId=IWL6610537082" target="_blank" class="btn-pos-5" title="匯出KML" style="margin-right: 5px;"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-6" title="明細" style="margin-right: 5px;" onclick="loadDcMain(\'IWL6610537082\',\'嘉義市第一期港坪市地重劃區\');"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-7" title="影音模式" style="margin-right: 5px;" onclick="loadMeditaPage(\'IWL6610537082\',120.425061, 23.474224)"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-8" title="實價查詢" style="margin-right: 5px;" onclick="loadDcQueryPrice(\'120.425061\',\'23.474224\');"></a>';
+					//htmlc=htmlc+'<a href="./jsp/Google_Street_View.jsp?lat=23.474224&amp;lon=120.425061" target="_blank"  class="btn-pos-9"  title="街景"></a>';
+					htmlc=htmlc+'<button title="範圍圖" class="border_btn_f" onfocus="blur()" href="#" onclick="loadDcKml(\'IWL6610537082\', \'4\', {synDpm : true});"><i class="fa fa-paint-brush" aria-hidden="true"></i><span class="visible-xs">範圍</span></button>';
+					htmlc=htmlc+'<button title="導航" class="border_btn_f" onfocus="blur()" href="#" onclick="dcPosShowPathDialog(120.425061, 23.474224);"><i class="fa fa-location-arrow" aria-hidden="true"></i><span class="visible-xs">導航</span></button>';
+					htmlc=htmlc+'<a title="匯出KML：本服務需先下載安裝Google Earth軟體，詳情請見首頁說明。" href="DcDl_dlDcKml?pjId=IWL6610537082" target="_blank"><button class="border_btn_f" onfocus="blur()" href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i><span class="visible-xs">匯出</span></button></a>';
+					htmlc=htmlc+'<button title="明細"  class="border_btn_f" onfocus="blur()" href="#"  onclick="loadDcMain(\'IWL6610537082\',\'嘉義市第一期港坪市地重劃區\');"><i class="fa fa-commenting-o" aria-hidden="true"></i><span class="visible-xs">明細</span></button>';
+					htmlc=htmlc+'<button title="影音模式" class="border_btn_f" onfocus="blur()" href="#" onclick="loadMeditaPage(\'IWL6610537082\',120.425061, 23.474224)"><i class="fa fa-camera" aria-hidden="true"></i><span class="visible-xs">影音</span></button>';
+					htmlc=htmlc+'<button title="實價查詢" class="border_btn_f" onfocus="blur()" href="#" onclick="showPriceQuery(this);"><i class="fa fa-usd" aria-hidden="true"></i><span class="visible-xs">實價</span></button>';
+					htmlc=htmlc+'<a title="街景" href="./jsp/Google_Street_View.jsp?lat=23.474224&amp;lon=120.425061" target="_blank"><button class="border_btn_f" onfocus="blur()" href="#"><i class="fa fa-street-view" aria-hidden="true"></i><span class="visible-xs">街景</span></button></a>';
+					htmlc=htmlc+'<button title="回查詢" class="border_btn_f" onfocus="blur()" onclick="showDevQuery();"><i class="fa fa-level-up" aria-hidden="true"> </i><span class="visible-xs">返回</span></button>';
+					htmlc=htmlc+'<span class="hidden-md hidden-sm hidden-lg"><button class="border_btn_f" onfocus="blur()" onclick=\'$(\"#popup-closer\").trigger(\"click\");\'><i class="fa fa-times" aria-hidden="true"></i><span class="visible-xs">關閉</span></button></span>';
+					htmlc=htmlc+'</td></tr></tbody></table></div>';
+					ol2d.fly2Pos({
+						'type' :'devZone',
+						'coordinates' : [ 120.425061 , 23.474224], 
+						'imgSrc' : './images/dc/icon/B_4.png' ,
+						'attrArray' : {
+							'id' : 'IWL6610537082'
+							,'htmlContent' : htmlc
+							,'1callbackUrl':'DevelopmentZone_ajax_MapPhotolist?seqid=IWL6610537082'
+							,'callback' : function(){
+				    			if ($(window).width() < 768) {
+				    				$(".ol-popup #hor-zebra-e").css({"min-width":"150px","width":"150px"});
+				    				$(".ol-popup").css({"min-width":"150px","background-color":"white"});
+				    			}
+				    			else{
+				    				$(".ol-popup #hor-zebra-e").css({"min-width":"377px"});
+				    			}								
+							}
+						} ,
+					}, {
+						"id":'IWL6610537082',
+						"label" : '',
+						"clean" : false,
+						"visible" : true,
+						"center" : true,
+						"cookie" : true,		
+						
+						
+							"name": '嘉義市嘉義市第一期港坪市地重劃區',
+						
+						
+						"style" : "DevIcon" , 
+					}) ; 
+					</script>					
+									
+				</tr>
+			
+				<tr seqatr="YTT5673908062" dev-name="嘉義市第二期竹圍市地重劃" status="4" lat="23.486543" lon="120.428337"  class="dev_list1"  casetype="B" style="cursor: pointer">
+					<td class="hidden-md hidden-sm hidden-xs">075&nbsp;</td>
+					<td nowrap>辦理完成</td>
+					<td nowrap>嘉義市</td>
+					<td align="left">
+					嘉義市第二期竹圍市地重劃
+					
+					
+					</td>
+					<td width="4em">
+					<input type="button" 
+						class="border_btn_b font btn-block developmentDetailCss" style="padding:2px;margin:0px"
+						value="明細" onclick="DZlist_click($(this));">
+					<input type="button" 
+						class="border_btn_b font btn-block developmentDetailCss hidden-md hidden-sm hidden-xs exkml" style="padding:2px;margin-left:0px"
+						value="匯出KML" onclick="dlDcKml('YTT5673908062');" title="">
+					</td>
+										
+					<script>
+					var htmlc='<table id="hor-zebra-e" style="width:195px;max-width: 420px;">';
+					htmlc=htmlc+'<tbody>';
+					htmlc=htmlc+'';
+					htmlc=htmlc+'<tr><td class="odd" colspan="2">嘉義市 嘉義市第二期竹圍市地重劃 <span class="hidden-md hidden-sm hidden-xs">市地重劃</SPAN><span class="hidden-md hidden-sm hidden-xs"> ';
+					
+					
+					
+					htmlc=htmlc+'－辦理完成';
+					
+					htmlc=htmlc+'</span></td></tr><tr lon="120.428337" lat="23.486543"><td colspan="2" class="qt-center">';					
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-1" title="範圍圖" style="margin-right: 5px;" onclick="loadDcKml(\'YTT5673908062\', \'4\', {synDpm : true});"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-2" title="導航" style="margin-right: 5px;" onclick="dcPosShowPathDialog(120.428337, 23.486543);"></a>';
+					//htmlc=htmlc+'<a href="DcDl_dlDcKml?pjId=YTT5673908062" target="_blank" class="btn-pos-5" title="匯出KML" style="margin-right: 5px;"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-6" title="明細" style="margin-right: 5px;" onclick="loadDcMain(\'YTT5673908062\',\'嘉義市第二期竹圍市地重劃\');"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-7" title="影音模式" style="margin-right: 5px;" onclick="loadMeditaPage(\'YTT5673908062\',120.428337, 23.486543)"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-8" title="實價查詢" style="margin-right: 5px;" onclick="loadDcQueryPrice(\'120.428337\',\'23.486543\');"></a>';
+					//htmlc=htmlc+'<a href="./jsp/Google_Street_View.jsp?lat=23.486543&amp;lon=120.428337" target="_blank"  class="btn-pos-9"  title="街景"></a>';
+					htmlc=htmlc+'<button title="範圍圖" class="border_btn_f" onfocus="blur()" href="#" onclick="loadDcKml(\'YTT5673908062\', \'4\', {synDpm : true});"><i class="fa fa-paint-brush" aria-hidden="true"></i><span class="visible-xs">範圍</span></button>';
+					htmlc=htmlc+'<button title="導航" class="border_btn_f" onfocus="blur()" href="#" onclick="dcPosShowPathDialog(120.428337, 23.486543);"><i class="fa fa-location-arrow" aria-hidden="true"></i><span class="visible-xs">導航</span></button>';
+					htmlc=htmlc+'<a title="匯出KML：本服務需先下載安裝Google Earth軟體，詳情請見首頁說明。" href="DcDl_dlDcKml?pjId=YTT5673908062" target="_blank"><button class="border_btn_f" onfocus="blur()" href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i><span class="visible-xs">匯出</span></button></a>';
+					htmlc=htmlc+'<button title="明細"  class="border_btn_f" onfocus="blur()" href="#"  onclick="loadDcMain(\'YTT5673908062\',\'嘉義市第二期竹圍市地重劃\');"><i class="fa fa-commenting-o" aria-hidden="true"></i><span class="visible-xs">明細</span></button>';
+					htmlc=htmlc+'<button title="影音模式" class="border_btn_f" onfocus="blur()" href="#" onclick="loadMeditaPage(\'YTT5673908062\',120.428337, 23.486543)"><i class="fa fa-camera" aria-hidden="true"></i><span class="visible-xs">影音</span></button>';
+					htmlc=htmlc+'<button title="實價查詢" class="border_btn_f" onfocus="blur()" href="#" onclick="showPriceQuery(this);"><i class="fa fa-usd" aria-hidden="true"></i><span class="visible-xs">實價</span></button>';
+					htmlc=htmlc+'<a title="街景" href="./jsp/Google_Street_View.jsp?lat=23.486543&amp;lon=120.428337" target="_blank"><button class="border_btn_f" onfocus="blur()" href="#"><i class="fa fa-street-view" aria-hidden="true"></i><span class="visible-xs">街景</span></button></a>';
+					htmlc=htmlc+'<button title="回查詢" class="border_btn_f" onfocus="blur()" onclick="showDevQuery();"><i class="fa fa-level-up" aria-hidden="true"> </i><span class="visible-xs">返回</span></button>';
+					htmlc=htmlc+'<span class="hidden-md hidden-sm hidden-lg"><button class="border_btn_f" onfocus="blur()" onclick=\'$(\"#popup-closer\").trigger(\"click\");\'><i class="fa fa-times" aria-hidden="true"></i><span class="visible-xs">關閉</span></button></span>';
+					htmlc=htmlc+'</td></tr></tbody></table></div>';
+					ol2d.fly2Pos({
+						'type' :'devZone',
+						'coordinates' : [ 120.428337 , 23.486543], 
+						'imgSrc' : './images/dc/icon/B_4.png' ,
+						'attrArray' : {
+							'id' : 'YTT5673908062'
+							,'htmlContent' : htmlc
+							,'1callbackUrl':'DevelopmentZone_ajax_MapPhotolist?seqid=YTT5673908062'
+							,'callback' : function(){
+				    			if ($(window).width() < 768) {
+				    				$(".ol-popup #hor-zebra-e").css({"min-width":"150px","width":"150px"});
+				    				$(".ol-popup").css({"min-width":"150px","background-color":"white"});
+				    			}
+				    			else{
+				    				$(".ol-popup #hor-zebra-e").css({"min-width":"377px"});
+				    			}								
+							}
+						} ,
+					}, {
+						"id":'YTT5673908062',
+						"label" : '',
+						"clean" : false,
+						"visible" : true,
+						"center" : true,
+						"cookie" : true,		
+						
+						
+							"name": '嘉義市嘉義市第二期竹圍市地重劃',
+						
+						
+						"style" : "DevIcon" , 
+					}) ; 
+					</script>					
+									
+				</tr>
+			
+				<tr seqatr="VLX6520289867" dev-name="嘉義市第三期中興市地重劃區" status="4" lat="23.483983" lon="120.434596"  class="dev_list1"  casetype="B" style="cursor: pointer">
+					<td class="hidden-md hidden-sm hidden-xs">076&nbsp;</td>
+					<td nowrap>辦理完成</td>
+					<td nowrap>嘉義市</td>
+					<td align="left">
+					嘉義市第三期中興市地重劃區
+					
+					
+					</td>
+					<td width="4em">
+					<input type="button" 
+						class="border_btn_b font btn-block developmentDetailCss" style="padding:2px;margin:0px"
+						value="明細" onclick="DZlist_click($(this));">
+					<input type="button" 
+						class="border_btn_b font btn-block developmentDetailCss hidden-md hidden-sm hidden-xs exkml" style="padding:2px;margin-left:0px"
+						value="匯出KML" onclick="dlDcKml('VLX6520289867');" title="">
+					</td>
+										
+					<script>
+					var htmlc='<table id="hor-zebra-e" style="width:195px;max-width: 420px;">';
+					htmlc=htmlc+'<tbody>';
+					htmlc=htmlc+'';
+					htmlc=htmlc+'<tr><td class="odd" colspan="2">嘉義市 嘉義市第三期中興市地重劃區 <span class="hidden-md hidden-sm hidden-xs">市地重劃</SPAN><span class="hidden-md hidden-sm hidden-xs"> ';
+					
+					
+					
+					htmlc=htmlc+'－辦理完成';
+					
+					htmlc=htmlc+'</span></td></tr><tr lon="120.434596" lat="23.483983"><td colspan="2" class="qt-center">';					
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-1" title="範圍圖" style="margin-right: 5px;" onclick="loadDcKml(\'VLX6520289867\', \'4\', {synDpm : true});"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-2" title="導航" style="margin-right: 5px;" onclick="dcPosShowPathDialog(120.434596, 23.483983);"></a>';
+					//htmlc=htmlc+'<a href="DcDl_dlDcKml?pjId=VLX6520289867" target="_blank" class="btn-pos-5" title="匯出KML" style="margin-right: 5px;"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-6" title="明細" style="margin-right: 5px;" onclick="loadDcMain(\'VLX6520289867\',\'嘉義市第三期中興市地重劃區\');"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-7" title="影音模式" style="margin-right: 5px;" onclick="loadMeditaPage(\'VLX6520289867\',120.434596, 23.483983)"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-8" title="實價查詢" style="margin-right: 5px;" onclick="loadDcQueryPrice(\'120.434596\',\'23.483983\');"></a>';
+					//htmlc=htmlc+'<a href="./jsp/Google_Street_View.jsp?lat=23.483983&amp;lon=120.434596" target="_blank"  class="btn-pos-9"  title="街景"></a>';
+					htmlc=htmlc+'<button title="範圍圖" class="border_btn_f" onfocus="blur()" href="#" onclick="loadDcKml(\'VLX6520289867\', \'4\', {synDpm : true});"><i class="fa fa-paint-brush" aria-hidden="true"></i><span class="visible-xs">範圍</span></button>';
+					htmlc=htmlc+'<button title="導航" class="border_btn_f" onfocus="blur()" href="#" onclick="dcPosShowPathDialog(120.434596, 23.483983);"><i class="fa fa-location-arrow" aria-hidden="true"></i><span class="visible-xs">導航</span></button>';
+					htmlc=htmlc+'<a title="匯出KML：本服務需先下載安裝Google Earth軟體，詳情請見首頁說明。" href="DcDl_dlDcKml?pjId=VLX6520289867" target="_blank"><button class="border_btn_f" onfocus="blur()" href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i><span class="visible-xs">匯出</span></button></a>';
+					htmlc=htmlc+'<button title="明細"  class="border_btn_f" onfocus="blur()" href="#"  onclick="loadDcMain(\'VLX6520289867\',\'嘉義市第三期中興市地重劃區\');"><i class="fa fa-commenting-o" aria-hidden="true"></i><span class="visible-xs">明細</span></button>';
+					htmlc=htmlc+'<button title="影音模式" class="border_btn_f" onfocus="blur()" href="#" onclick="loadMeditaPage(\'VLX6520289867\',120.434596, 23.483983)"><i class="fa fa-camera" aria-hidden="true"></i><span class="visible-xs">影音</span></button>';
+					htmlc=htmlc+'<button title="實價查詢" class="border_btn_f" onfocus="blur()" href="#" onclick="showPriceQuery(this);"><i class="fa fa-usd" aria-hidden="true"></i><span class="visible-xs">實價</span></button>';
+					htmlc=htmlc+'<a title="街景" href="./jsp/Google_Street_View.jsp?lat=23.483983&amp;lon=120.434596" target="_blank"><button class="border_btn_f" onfocus="blur()" href="#"><i class="fa fa-street-view" aria-hidden="true"></i><span class="visible-xs">街景</span></button></a>';
+					htmlc=htmlc+'<button title="回查詢" class="border_btn_f" onfocus="blur()" onclick="showDevQuery();"><i class="fa fa-level-up" aria-hidden="true"> </i><span class="visible-xs">返回</span></button>';
+					htmlc=htmlc+'<span class="hidden-md hidden-sm hidden-lg"><button class="border_btn_f" onfocus="blur()" onclick=\'$(\"#popup-closer\").trigger(\"click\");\'><i class="fa fa-times" aria-hidden="true"></i><span class="visible-xs">關閉</span></button></span>';
+					htmlc=htmlc+'</td></tr></tbody></table></div>';
+					ol2d.fly2Pos({
+						'type' :'devZone',
+						'coordinates' : [ 120.434596 , 23.483983], 
+						'imgSrc' : './images/dc/icon/B_4.png' ,
+						'attrArray' : {
+							'id' : 'VLX6520289867'
+							,'htmlContent' : htmlc
+							,'1callbackUrl':'DevelopmentZone_ajax_MapPhotolist?seqid=VLX6520289867'
+							,'callback' : function(){
+				    			if ($(window).width() < 768) {
+				    				$(".ol-popup #hor-zebra-e").css({"min-width":"150px","width":"150px"});
+				    				$(".ol-popup").css({"min-width":"150px","background-color":"white"});
+				    			}
+				    			else{
+				    				$(".ol-popup #hor-zebra-e").css({"min-width":"377px"});
+				    			}								
+							}
+						} ,
+					}, {
+						"id":'VLX6520289867',
+						"label" : '',
+						"clean" : false,
+						"visible" : true,
+						"center" : true,
+						"cookie" : true,		
+						
+						
+							"name": '嘉義市嘉義市第三期中興市地重劃區',
+						
+						
+						"style" : "DevIcon" , 
+					}) ; 
+					</script>					
+									
+				</tr>
+			
+				<tr seqatr="FNP6526654850" dev-name="嘉義市第四期友愛市地重劃區" status="4" lat="23.480608" lon="120.435814"  class="dev_list1"  casetype="B" style="cursor: pointer">
+					<td class="hidden-md hidden-sm hidden-xs">078&nbsp;</td>
+					<td nowrap>辦理完成</td>
+					<td nowrap>嘉義市</td>
+					<td align="left">
+					嘉義市第四期友愛市地重劃區
+					
+					
+					</td>
+					<td width="4em">
+					<input type="button" 
+						class="border_btn_b font btn-block developmentDetailCss" style="padding:2px;margin:0px"
+						value="明細" onclick="DZlist_click($(this));">
+					<input type="button" 
+						class="border_btn_b font btn-block developmentDetailCss hidden-md hidden-sm hidden-xs exkml" style="padding:2px;margin-left:0px"
+						value="匯出KML" onclick="dlDcKml('FNP6526654850');" title="">
+					</td>
+										
+					<script>
+					var htmlc='<table id="hor-zebra-e" style="width:195px;max-width: 420px;">';
+					htmlc=htmlc+'<tbody>';
+					htmlc=htmlc+'';
+					htmlc=htmlc+'<tr><td class="odd" colspan="2">嘉義市 嘉義市第四期友愛市地重劃區 <span class="hidden-md hidden-sm hidden-xs">市地重劃</SPAN><span class="hidden-md hidden-sm hidden-xs"> ';
+					
+					
+					
+					htmlc=htmlc+'－辦理完成';
+					
+					htmlc=htmlc+'</span></td></tr><tr lon="120.435814" lat="23.480608"><td colspan="2" class="qt-center">';					
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-1" title="範圍圖" style="margin-right: 5px;" onclick="loadDcKml(\'FNP6526654850\', \'4\', {synDpm : true});"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-2" title="導航" style="margin-right: 5px;" onclick="dcPosShowPathDialog(120.435814, 23.480608);"></a>';
+					//htmlc=htmlc+'<a href="DcDl_dlDcKml?pjId=FNP6526654850" target="_blank" class="btn-pos-5" title="匯出KML" style="margin-right: 5px;"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-6" title="明細" style="margin-right: 5px;" onclick="loadDcMain(\'FNP6526654850\',\'嘉義市第四期友愛市地重劃區\');"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-7" title="影音模式" style="margin-right: 5px;" onclick="loadMeditaPage(\'FNP6526654850\',120.435814, 23.480608)"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-8" title="實價查詢" style="margin-right: 5px;" onclick="loadDcQueryPrice(\'120.435814\',\'23.480608\');"></a>';
+					//htmlc=htmlc+'<a href="./jsp/Google_Street_View.jsp?lat=23.480608&amp;lon=120.435814" target="_blank"  class="btn-pos-9"  title="街景"></a>';
+					htmlc=htmlc+'<button title="範圍圖" class="border_btn_f" onfocus="blur()" href="#" onclick="loadDcKml(\'FNP6526654850\', \'4\', {synDpm : true});"><i class="fa fa-paint-brush" aria-hidden="true"></i><span class="visible-xs">範圍</span></button>';
+					htmlc=htmlc+'<button title="導航" class="border_btn_f" onfocus="blur()" href="#" onclick="dcPosShowPathDialog(120.435814, 23.480608);"><i class="fa fa-location-arrow" aria-hidden="true"></i><span class="visible-xs">導航</span></button>';
+					htmlc=htmlc+'<a title="匯出KML：本服務需先下載安裝Google Earth軟體，詳情請見首頁說明。" href="DcDl_dlDcKml?pjId=FNP6526654850" target="_blank"><button class="border_btn_f" onfocus="blur()" href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i><span class="visible-xs">匯出</span></button></a>';
+					htmlc=htmlc+'<button title="明細"  class="border_btn_f" onfocus="blur()" href="#"  onclick="loadDcMain(\'FNP6526654850\',\'嘉義市第四期友愛市地重劃區\');"><i class="fa fa-commenting-o" aria-hidden="true"></i><span class="visible-xs">明細</span></button>';
+					htmlc=htmlc+'<button title="影音模式" class="border_btn_f" onfocus="blur()" href="#" onclick="loadMeditaPage(\'FNP6526654850\',120.435814, 23.480608)"><i class="fa fa-camera" aria-hidden="true"></i><span class="visible-xs">影音</span></button>';
+					htmlc=htmlc+'<button title="實價查詢" class="border_btn_f" onfocus="blur()" href="#" onclick="showPriceQuery(this);"><i class="fa fa-usd" aria-hidden="true"></i><span class="visible-xs">實價</span></button>';
+					htmlc=htmlc+'<a title="街景" href="./jsp/Google_Street_View.jsp?lat=23.480608&amp;lon=120.435814" target="_blank"><button class="border_btn_f" onfocus="blur()" href="#"><i class="fa fa-street-view" aria-hidden="true"></i><span class="visible-xs">街景</span></button></a>';
+					htmlc=htmlc+'<button title="回查詢" class="border_btn_f" onfocus="blur()" onclick="showDevQuery();"><i class="fa fa-level-up" aria-hidden="true"> </i><span class="visible-xs">返回</span></button>';
+					htmlc=htmlc+'<span class="hidden-md hidden-sm hidden-lg"><button class="border_btn_f" onfocus="blur()" onclick=\'$(\"#popup-closer\").trigger(\"click\");\'><i class="fa fa-times" aria-hidden="true"></i><span class="visible-xs">關閉</span></button></span>';
+					htmlc=htmlc+'</td></tr></tbody></table></div>';
+					ol2d.fly2Pos({
+						'type' :'devZone',
+						'coordinates' : [ 120.435814 , 23.480608], 
+						'imgSrc' : './images/dc/icon/B_4.png' ,
+						'attrArray' : {
+							'id' : 'FNP6526654850'
+							,'htmlContent' : htmlc
+							,'1callbackUrl':'DevelopmentZone_ajax_MapPhotolist?seqid=FNP6526654850'
+							,'callback' : function(){
+				    			if ($(window).width() < 768) {
+				    				$(".ol-popup #hor-zebra-e").css({"min-width":"150px","width":"150px"});
+				    				$(".ol-popup").css({"min-width":"150px","background-color":"white"});
+				    			}
+				    			else{
+				    				$(".ol-popup #hor-zebra-e").css({"min-width":"377px"});
+				    			}								
+							}
+						} ,
+					}, {
+						"id":'FNP6526654850',
+						"label" : '',
+						"clean" : false,
+						"visible" : true,
+						"center" : true,
+						"cookie" : true,		
+						
+						
+							"name": '嘉義市嘉義市第四期友愛市地重劃區',
+						
+						
+						"style" : "DevIcon" , 
+					}) ; 
+					</script>					
+									
+				</tr>
+			
+				<tr seqatr="JPE2146082539" dev-name="嘉義市劉厝地區區段徵收" status="4" lat="23.466821" lon="120.417592"  class="dev_list1"  casetype="A" style="cursor: pointer">
+					<td class="hidden-md hidden-sm hidden-xs">086&nbsp;</td>
+					<td nowrap>辦理完成</td>
+					<td nowrap>嘉義市</td>
+					<td align="left">
+					嘉義市劉厝地區區段徵收
+					
+					<span class="spanb">相</span>
+					
+					
+					</td>
+					<td width="4em">
+					<input type="button" 
+						class="border_btn_b font btn-block developmentDetailCss" style="padding:2px;margin:0px"
+						value="明細" onclick="DZlist_click($(this));">
+					<input type="button" 
+						class="border_btn_b font btn-block developmentDetailCss hidden-md hidden-sm hidden-xs exkml" style="padding:2px;margin-left:0px"
+						value="匯出KML" onclick="dlDcKml('JPE2146082539');" title="">
+					</td>
+										
+					<script>
+					var htmlc='<table id="hor-zebra-e" style="width:195px;max-width: 420px;">';
+					htmlc=htmlc+'<tbody>';
+					htmlc=htmlc+'';
+					htmlc=htmlc+'<tr><td class="odd" colspan="2">嘉義市 嘉義市劉厝地區區段徵收 <span class="hidden-md hidden-sm hidden-xs">區段徵收</SPAN><span class="hidden-md hidden-sm hidden-xs"> ';
+					
+					
+					
+					htmlc=htmlc+'－辦理完成';
+					
+					htmlc=htmlc+'</span></td></tr><tr lon="120.417592" lat="23.466821"><td colspan="2" class="qt-center">';					
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-1" title="範圍圖" style="margin-right: 5px;" onclick="loadDcKml(\'JPE2146082539\', \'4\', {synDpm : true});"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-2" title="導航" style="margin-right: 5px;" onclick="dcPosShowPathDialog(120.417592, 23.466821);"></a>';
+					//htmlc=htmlc+'<a href="DcDl_dlDcKml?pjId=JPE2146082539" target="_blank" class="btn-pos-5" title="匯出KML" style="margin-right: 5px;"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-6" title="明細" style="margin-right: 5px;" onclick="loadDcMain(\'JPE2146082539\',\'嘉義市劉厝地區區段徵收\');"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-7" title="影音模式" style="margin-right: 5px;" onclick="loadMeditaPage(\'JPE2146082539\',120.417592, 23.466821)"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-8" title="實價查詢" style="margin-right: 5px;" onclick="loadDcQueryPrice(\'120.417592\',\'23.466821\');"></a>';
+					//htmlc=htmlc+'<a href="./jsp/Google_Street_View.jsp?lat=23.466821&amp;lon=120.417592" target="_blank"  class="btn-pos-9"  title="街景"></a>';
+					htmlc=htmlc+'<button title="範圍圖" class="border_btn_f" onfocus="blur()" href="#" onclick="loadDcKml(\'JPE2146082539\', \'4\', {synDpm : true});"><i class="fa fa-paint-brush" aria-hidden="true"></i><span class="visible-xs">範圍</span></button>';
+					htmlc=htmlc+'<button title="導航" class="border_btn_f" onfocus="blur()" href="#" onclick="dcPosShowPathDialog(120.417592, 23.466821);"><i class="fa fa-location-arrow" aria-hidden="true"></i><span class="visible-xs">導航</span></button>';
+					htmlc=htmlc+'<a title="匯出KML：本服務需先下載安裝Google Earth軟體，詳情請見首頁說明。" href="DcDl_dlDcKml?pjId=JPE2146082539" target="_blank"><button class="border_btn_f" onfocus="blur()" href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i><span class="visible-xs">匯出</span></button></a>';
+					htmlc=htmlc+'<button title="明細"  class="border_btn_f" onfocus="blur()" href="#"  onclick="loadDcMain(\'JPE2146082539\',\'嘉義市劉厝地區區段徵收\');"><i class="fa fa-commenting-o" aria-hidden="true"></i><span class="visible-xs">明細</span></button>';
+					htmlc=htmlc+'<button title="影音模式" class="border_btn_f" onfocus="blur()" href="#" onclick="loadMeditaPage(\'JPE2146082539\',120.417592, 23.466821)"><i class="fa fa-camera" aria-hidden="true"></i><span class="visible-xs">影音</span></button>';
+					htmlc=htmlc+'<button title="實價查詢" class="border_btn_f" onfocus="blur()" href="#" onclick="showPriceQuery(this);"><i class="fa fa-usd" aria-hidden="true"></i><span class="visible-xs">實價</span></button>';
+					htmlc=htmlc+'<a title="街景" href="./jsp/Google_Street_View.jsp?lat=23.466821&amp;lon=120.417592" target="_blank"><button class="border_btn_f" onfocus="blur()" href="#"><i class="fa fa-street-view" aria-hidden="true"></i><span class="visible-xs">街景</span></button></a>';
+					htmlc=htmlc+'<button title="回查詢" class="border_btn_f" onfocus="blur()" onclick="showDevQuery();"><i class="fa fa-level-up" aria-hidden="true"> </i><span class="visible-xs">返回</span></button>';
+					htmlc=htmlc+'<span class="hidden-md hidden-sm hidden-lg"><button class="border_btn_f" onfocus="blur()" onclick=\'$(\"#popup-closer\").trigger(\"click\");\'><i class="fa fa-times" aria-hidden="true"></i><span class="visible-xs">關閉</span></button></span>';
+					htmlc=htmlc+'</td></tr></tbody></table></div>';
+					ol2d.fly2Pos({
+						'type' :'devZone',
+						'coordinates' : [ 120.417592 , 23.466821], 
+						'imgSrc' : './images/dc/icon/A_4.png' ,
+						'attrArray' : {
+							'id' : 'JPE2146082539'
+							,'htmlContent' : htmlc
+							,'1callbackUrl':'DevelopmentZone_ajax_MapPhotolist?seqid=JPE2146082539'
+							,'callback' : function(){
+				    			if ($(window).width() < 768) {
+				    				$(".ol-popup #hor-zebra-e").css({"min-width":"150px","width":"150px"});
+				    				$(".ol-popup").css({"min-width":"150px","background-color":"white"});
+				    			}
+				    			else{
+				    				$(".ol-popup #hor-zebra-e").css({"min-width":"377px"});
+				    			}								
+							}
+						} ,
+					}, {
+						"id":'JPE2146082539',
+						"label" : '',
+						"clean" : false,
+						"visible" : true,
+						"center" : true,
+						"cookie" : true,		
+						
+						
+							"name": '嘉義市嘉義市劉厝地區區段徵收',
+						
+						
+						"style" : "DevIcon" , 
+					}) ; 
+					</script>					
+									
+				</tr>
+			
+				<tr seqatr="JNL2480905775" dev-name="嘉義市湖子內區段徵收地區" status="4" lat="23.448451" lon="120.444647"  class="dev_list1"  casetype="A" style="cursor: pointer">
+					<td class="hidden-md hidden-sm hidden-xs">098&nbsp;</td>
+					<td nowrap>辦理完成</td>
+					<td nowrap>嘉義市</td>
+					<td align="left">
+					嘉義市湖子內區段徵收地區
+					
+					<span class="spanb">相</span>
+					
+					
+					</td>
+					<td width="4em">
+					<input type="button" 
+						class="border_btn_b font btn-block developmentDetailCss" style="padding:2px;margin:0px"
+						value="明細" onclick="DZlist_click($(this));">
+					<input type="button" 
+						class="border_btn_b font btn-block developmentDetailCss hidden-md hidden-sm hidden-xs exkml" style="padding:2px;margin-left:0px"
+						value="匯出KML" onclick="dlDcKml('JNL2480905775');" title="">
+					</td>
+										
+					<script>
+					var htmlc='<table id="hor-zebra-e" style="width:195px;max-width: 420px;">';
+					htmlc=htmlc+'<tbody>';
+					htmlc=htmlc+'';
+					htmlc=htmlc+'<tr><td class="odd" colspan="2">嘉義市 嘉義市湖子內區段徵收地區 <span class="hidden-md hidden-sm hidden-xs">區段徵收</SPAN><span class="hidden-md hidden-sm hidden-xs"> ';
+					
+					
+					
+					htmlc=htmlc+'－辦理完成';
+					
+					htmlc=htmlc+'</span></td></tr><tr lon="120.444647" lat="23.448451"><td colspan="2" class="qt-center">';					
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-1" title="範圍圖" style="margin-right: 5px;" onclick="loadDcKml(\'JNL2480905775\', \'4\', {synDpm : true});"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-2" title="導航" style="margin-right: 5px;" onclick="dcPosShowPathDialog(120.444647, 23.448451);"></a>';
+					//htmlc=htmlc+'<a href="DcDl_dlDcKml?pjId=JNL2480905775" target="_blank" class="btn-pos-5" title="匯出KML" style="margin-right: 5px;"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-6" title="明細" style="margin-right: 5px;" onclick="loadDcMain(\'JNL2480905775\',\'嘉義市湖子內區段徵收地區\');"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-7" title="影音模式" style="margin-right: 5px;" onclick="loadMeditaPage(\'JNL2480905775\',120.444647, 23.448451)"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-8" title="實價查詢" style="margin-right: 5px;" onclick="loadDcQueryPrice(\'120.444647\',\'23.448451\');"></a>';
+					//htmlc=htmlc+'<a href="./jsp/Google_Street_View.jsp?lat=23.448451&amp;lon=120.444647" target="_blank"  class="btn-pos-9"  title="街景"></a>';
+					htmlc=htmlc+'<button title="範圍圖" class="border_btn_f" onfocus="blur()" href="#" onclick="loadDcKml(\'JNL2480905775\', \'4\', {synDpm : true});"><i class="fa fa-paint-brush" aria-hidden="true"></i><span class="visible-xs">範圍</span></button>';
+					htmlc=htmlc+'<button title="導航" class="border_btn_f" onfocus="blur()" href="#" onclick="dcPosShowPathDialog(120.444647, 23.448451);"><i class="fa fa-location-arrow" aria-hidden="true"></i><span class="visible-xs">導航</span></button>';
+					htmlc=htmlc+'<a title="匯出KML：本服務需先下載安裝Google Earth軟體，詳情請見首頁說明。" href="DcDl_dlDcKml?pjId=JNL2480905775" target="_blank"><button class="border_btn_f" onfocus="blur()" href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i><span class="visible-xs">匯出</span></button></a>';
+					htmlc=htmlc+'<button title="明細"  class="border_btn_f" onfocus="blur()" href="#"  onclick="loadDcMain(\'JNL2480905775\',\'嘉義市湖子內區段徵收地區\');"><i class="fa fa-commenting-o" aria-hidden="true"></i><span class="visible-xs">明細</span></button>';
+					htmlc=htmlc+'<button title="影音模式" class="border_btn_f" onfocus="blur()" href="#" onclick="loadMeditaPage(\'JNL2480905775\',120.444647, 23.448451)"><i class="fa fa-camera" aria-hidden="true"></i><span class="visible-xs">影音</span></button>';
+					htmlc=htmlc+'<button title="實價查詢" class="border_btn_f" onfocus="blur()" href="#" onclick="showPriceQuery(this);"><i class="fa fa-usd" aria-hidden="true"></i><span class="visible-xs">實價</span></button>';
+					htmlc=htmlc+'<a title="街景" href="./jsp/Google_Street_View.jsp?lat=23.448451&amp;lon=120.444647" target="_blank"><button class="border_btn_f" onfocus="blur()" href="#"><i class="fa fa-street-view" aria-hidden="true"></i><span class="visible-xs">街景</span></button></a>';
+					htmlc=htmlc+'<button title="回查詢" class="border_btn_f" onfocus="blur()" onclick="showDevQuery();"><i class="fa fa-level-up" aria-hidden="true"> </i><span class="visible-xs">返回</span></button>';
+					htmlc=htmlc+'<span class="hidden-md hidden-sm hidden-lg"><button class="border_btn_f" onfocus="blur()" onclick=\'$(\"#popup-closer\").trigger(\"click\");\'><i class="fa fa-times" aria-hidden="true"></i><span class="visible-xs">關閉</span></button></span>';
+					htmlc=htmlc+'</td></tr></tbody></table></div>';
+					ol2d.fly2Pos({
+						'type' :'devZone',
+						'coordinates' : [ 120.444647 , 23.448451], 
+						'imgSrc' : './images/dc/icon/A_4.png' ,
+						'attrArray' : {
+							'id' : 'JNL2480905775'
+							,'htmlContent' : htmlc
+							,'1callbackUrl':'DevelopmentZone_ajax_MapPhotolist?seqid=JNL2480905775'
+							,'callback' : function(){
+				    			if ($(window).width() < 768) {
+				    				$(".ol-popup #hor-zebra-e").css({"min-width":"150px","width":"150px"});
+				    				$(".ol-popup").css({"min-width":"150px","background-color":"white"});
+				    			}
+				    			else{
+				    				$(".ol-popup #hor-zebra-e").css({"min-width":"377px"});
+				    			}								
+							}
+						} ,
+					}, {
+						"id":'JNL2480905775',
+						"label" : '',
+						"clean" : false,
+						"visible" : true,
+						"center" : true,
+						"cookie" : true,		
+						
+						
+							"name": '嘉義市嘉義市湖子內區段徵收地區',
+						
+						
+						"style" : "DevIcon" , 
+					}) ; 
+					</script>					
+									
+				</tr>
+			
+				<tr seqatr="UYP9109314221" dev-name="嘉義市第五期貨物轉運中心區市地重劃" status="3" lat="23.491202" lon="120.392757"  class="dev_list1"  casetype="B" style="cursor: pointer">
+					<td class="hidden-md hidden-sm hidden-xs">105&nbsp;</td>
+					<td nowrap>辦理中</td>
+					<td nowrap>嘉義市</td>
+					<td align="left">
+					嘉義市第五期貨物轉運中心區市地重劃
+					
+					<span class="spanb">相</span>
+					
+					
+					</td>
+					<td width="4em">
+					<input type="button" 
+						class="border_btn_b font btn-block developmentDetailCss" style="padding:2px;margin:0px"
+						value="明細" onclick="DZlist_click($(this));">
+					<input type="button" 
+						class="border_btn_b font btn-block developmentDetailCss hidden-md hidden-sm hidden-xs exkml" style="padding:2px;margin-left:0px"
+						value="匯出KML" onclick="dlDcKml('UYP9109314221');" title="">
+					</td>
+										
+					<script>
+					var htmlc='<table id="hor-zebra-e" style="width:195px;max-width: 420px;">';
+					htmlc=htmlc+'<tbody>';
+					htmlc=htmlc+'';
+					htmlc=htmlc+'<tr><td class="odd" colspan="2">嘉義市 嘉義市第五期貨物轉運中心區市地重劃 <span class="hidden-md hidden-sm hidden-xs">市地重劃</SPAN><span class="hidden-md hidden-sm hidden-xs"> ';
+					
+					
+					htmlc=htmlc+'－辦理中';
+					
+					
+					htmlc=htmlc+'</span></td></tr><tr lon="120.392757" lat="23.491202"><td colspan="2" class="qt-center">';					
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-1" title="範圍圖" style="margin-right: 5px;" onclick="loadDcKml(\'UYP9109314221\', \'3\', {synDpm : true});"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-2" title="導航" style="margin-right: 5px;" onclick="dcPosShowPathDialog(120.392757, 23.491202);"></a>';
+					//htmlc=htmlc+'<a href="DcDl_dlDcKml?pjId=UYP9109314221" target="_blank" class="btn-pos-5" title="匯出KML" style="margin-right: 5px;"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-6" title="明細" style="margin-right: 5px;" onclick="loadDcMain(\'UYP9109314221\',\'嘉義市第五期貨物轉運中心區市地重劃\');"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-7" title="影音模式" style="margin-right: 5px;" onclick="loadMeditaPage(\'UYP9109314221\',120.392757, 23.491202)"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-8" title="實價查詢" style="margin-right: 5px;" onclick="loadDcQueryPrice(\'120.392757\',\'23.491202\');"></a>';
+					//htmlc=htmlc+'<a href="./jsp/Google_Street_View.jsp?lat=23.491202&amp;lon=120.392757" target="_blank"  class="btn-pos-9"  title="街景"></a>';
+					htmlc=htmlc+'<button title="範圍圖" class="border_btn_f" onfocus="blur()" href="#" onclick="loadDcKml(\'UYP9109314221\', \'3\', {synDpm : true});"><i class="fa fa-paint-brush" aria-hidden="true"></i><span class="visible-xs">範圍</span></button>';
+					htmlc=htmlc+'<button title="導航" class="border_btn_f" onfocus="blur()" href="#" onclick="dcPosShowPathDialog(120.392757, 23.491202);"><i class="fa fa-location-arrow" aria-hidden="true"></i><span class="visible-xs">導航</span></button>';
+					htmlc=htmlc+'<a title="匯出KML：本服務需先下載安裝Google Earth軟體，詳情請見首頁說明。" href="DcDl_dlDcKml?pjId=UYP9109314221" target="_blank"><button class="border_btn_f" onfocus="blur()" href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i><span class="visible-xs">匯出</span></button></a>';
+					htmlc=htmlc+'<button title="明細"  class="border_btn_f" onfocus="blur()" href="#"  onclick="loadDcMain(\'UYP9109314221\',\'嘉義市第五期貨物轉運中心區市地重劃\');"><i class="fa fa-commenting-o" aria-hidden="true"></i><span class="visible-xs">明細</span></button>';
+					htmlc=htmlc+'<button title="影音模式" class="border_btn_f" onfocus="blur()" href="#" onclick="loadMeditaPage(\'UYP9109314221\',120.392757, 23.491202)"><i class="fa fa-camera" aria-hidden="true"></i><span class="visible-xs">影音</span></button>';
+					htmlc=htmlc+'<button title="實價查詢" class="border_btn_f" onfocus="blur()" href="#" onclick="showPriceQuery(this);"><i class="fa fa-usd" aria-hidden="true"></i><span class="visible-xs">實價</span></button>';
+					htmlc=htmlc+'<a title="街景" href="./jsp/Google_Street_View.jsp?lat=23.491202&amp;lon=120.392757" target="_blank"><button class="border_btn_f" onfocus="blur()" href="#"><i class="fa fa-street-view" aria-hidden="true"></i><span class="visible-xs">街景</span></button></a>';
+					htmlc=htmlc+'<button title="回查詢" class="border_btn_f" onfocus="blur()" onclick="showDevQuery();"><i class="fa fa-level-up" aria-hidden="true"> </i><span class="visible-xs">返回</span></button>';
+					htmlc=htmlc+'<span class="hidden-md hidden-sm hidden-lg"><button class="border_btn_f" onfocus="blur()" onclick=\'$(\"#popup-closer\").trigger(\"click\");\'><i class="fa fa-times" aria-hidden="true"></i><span class="visible-xs">關閉</span></button></span>';
+					htmlc=htmlc+'</td></tr></tbody></table></div>';
+					ol2d.fly2Pos({
+						'type' :'devZone',
+						'coordinates' : [ 120.392757 , 23.491202], 
+						'imgSrc' : './images/dc/icon/B_3.png' ,
+						'attrArray' : {
+							'id' : 'UYP9109314221'
+							,'htmlContent' : htmlc
+							,'1callbackUrl':'DevelopmentZone_ajax_MapPhotolist?seqid=UYP9109314221'
+							,'callback' : function(){
+				    			if ($(window).width() < 768) {
+				    				$(".ol-popup #hor-zebra-e").css({"min-width":"150px","width":"150px"});
+				    				$(".ol-popup").css({"min-width":"150px","background-color":"white"});
+				    			}
+				    			else{
+				    				$(".ol-popup #hor-zebra-e").css({"min-width":"377px"});
+				    			}								
+							}
+						} ,
+					}, {
+						"id":'UYP9109314221',
+						"label" : '',
+						"clean" : false,
+						"visible" : true,
+						"center" : true,
+						"cookie" : true,		
+						
+						
+							"name": '嘉義市嘉義市第五期貨物轉運中心區市地重劃',
+						
+						
+						"style" : "DevIcon" , 
+					}) ; 
+					</script>					
+									
+				</tr>
+			
+				</tbody>
+			</table>
+			<!-- <input type="button" class="btn btn-primary font"  value="回條件" id="" onclick='collapsedDown($("#dev_query_panel")); '> -->
+		</div>
+	</div>
+
+<script>
+var devname,devstatus;
+var table;
+	$(function() {	
+		$(".exkml").attr('title',dchelp2);
+		$("#dev_query_panel").trigger('click');
+		$("#page-content-wrapper").fadeIn();
+		//loadDcKml('GKG8809015991');
+		ol2d.addSelectInteraction();
+			
+		setTimeout(function(){ initDataTable();}, 300);
+		
+		$("#developmentZone_list_id tbody").on('click', 'tr',function() {				
+			var jqTr = $(this).closest("tr");
+			//alert(jqTr.attr("lon"));
+			if(jqTr.attr("lon")!="" && jqTr.attr("lat")!=""){
+				ol2d.setCenter(parseFloat(jqTr.attr("lon")),parseFloat(jqTr.attr("lat")));
+				ol2d.setZoom(12);
+			}
+		});
+	});
+	
+	
+	
+	
+	
+	
+	/**
+	 * 下載開發案件範圍圖KML。
+	 */
+	function dlDcKml(pjId) {
+		if(pjId==null) {
+			console.log("請指定案件ID");
+			return;
+		}
+		var mydata = {
+			"pjId" : pjId
+		};
+		var opt = {
+				"url" : "./DcDl_dlDcKml",
+				"data" : mydata,
+				"done" : null,
+				"fail" : function(){alert("尚未編輯開發區範圍圖!")},
+				"quiet" : false
+		};	
+		qtAjax.dlAtt(opt);
+	}
+	
+	
+	function initDataTable(){		
+		var sheight=$(document).height()-270;
+		calcModalBody();
+		var opt ={
+	 			language : {  
+					info: "顯示 _START_ 至 _END_ 筆  (查詢結果 : _TOTAL_ 筆) <input type=\"button\" style=\"padding-top:0.2em;padding-bottom:0.1em;\" class=\"btn btn-primary font\"  value=\"地圖\" id=\"\" onclick='$(\"#developmentZoneModal .close\").click(); '>" ,
+					emptyTable : "無資料" ,
+					infoEmpty: "顯示  0 筆資料",
+				},
+				info : true, 
+	            deferRender:    true,
+	            scrollY:        sheight,
+	            scrollCollapse: true,
+	            scroller:       true,
+	            paging: true, 
+	            autoWidth: false,
+	            "lengthChange" : false, 
+	            "iDisplayLength": 10,
+	            searching : false,
+	            "order": [[ 0, "desc" ]],
+	            ordering: true,	            
+	            columnDefs: [{
+	            	"targets": 4,
+	            	"orderable": false,
+	            	
+	            },{ targets: [ 1 ],orderData: [ 1, 0 ]}],
+	 	    	dom:"<'row'<'col-sm-4'i><'col-sm-4'f><'col-sm-4'p>>" +
+		    	"<'row'<'col-sm-12'tr>>" ,
+		    } 
+//		qtCommon.dataTables('developmentZone_list_id' , opt) ;		
+		table=qtCommon.dataTablesScroller('developmentZone_list_id' , opt) ;
+		setTimeout(function() { table.draw(true); }, 500);
+		$('.dataTables_scrollBody').unbind('scroll');
+		$('.dataTables_scrollBody').on('scroll', function() {
+		    if(!$("#dev_query_panel").hasClass("panel-collapsed")){
+		    	$("#dev_query_panel").trigger('click');		    	
+		    }
+		});
+		$('#tab_d1').scrollTop(150);		
+		$("#btn_developmentZone_search_id").show();
+		/*
+		var features = ol2d.posvectorLayer.getSource().getFeatures();
+		var collection = ol2d.select.getFeatures();
+		for (var i = 0, len = features.length; i < len; i++) {
+			var pos_type = features[i].get("pos_type");
+			console.log("features:"+pos_type); 
+			
+		}
+		//collection.push(features[0]);
+		ol2d.select.dispatchEvent({
+			  type: 'select',
+			  selected: [features[0]],
+			  deselected: []
+			});
+		*/
+	}
+	
+	
+	
+	function showPriceQuery(obj){		 
+		var jqTr = $(obj).closest("tr");
+		if(jqTr.attr("lon")!="" && jqTr.attr("lat")!=""){
+			ol2d.setCenter(parseFloat(jqTr.attr("lon")),parseFloat(jqTr.attr("lat")));
+			ol2d.setZoom(12);
+		}
+		//$("#queryPriceModal").showStackedModal();
+		showTopModalAndHideElse("queryPriceModal");
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</script>
+<style>
+#developmentZoneResultId .dataTables_paginate {
+	display: none;
+}
+
+.u10_table .dataTables_scrollHeadInner {
+	width: 100%;
+}
+
+.dev_list1 td {
+	vertical-align: middle !important;
+	padding: 4px !important;
+}
+
+.dataTables_scrollBody {
+	overflow-x: hidden !important;
+	min-height: 80px;
+}
+
+/* dataTables CSS modification & positioning */
+table.dataTable thead .sorting:before,table.dataTable thead .sorting_asc:before,table.dataTable thead .sorting_desc:before,table.dataTable thead .sorting_asc_disabled:before,table.dataTable thead .sorting_desc_disabled:before
+	{
+	font-family: FontAwesome;
+	content: "\f0dc";
+	right: 0.5em;
+	bottom: 0.5em;
+}
+
+table.dataTable thead th {
+	background-image: none !important;
+}
+
+table.dataTable thead .sorting_asc:before,table.dataTable thead .sorting_desc:after
+	{
+	opacity: 0.3
+}
+
+table.dataTable thead th.sorting:after,table.dataTable thead th.sorting_asc:after,table.dataTable thead th.sorting_desc:after
+	{
+	display: block;
+	font-family: FontAwesome;
+	content: "\f0de";
+}
+
+table.dataTable thead th.sorting:after {
+	content: "\f0de";
+	color: #ddd;
+}
+
+table.dataTable thead th.sorting_asc:after {
+	content: "\f0de";
+	right: 0.5em;
+	bottom: 0.5em;
+	opacity: 1;
+}
+
+table.dataTable thead th.sorting_desc:after {
+	content: "\f0dd";
+	right: 0.5em;
+	bottom: 0.5em;
+	opacity: 1;
+}
+
+.u10_table  thead>tr>th.sorting {
+	padding-right: 20px !important;
+}
+
+.u10_table thead > tr > th.sorting_asc,.u10_table thead > tr > th.sorting_desc{
+	padding-right: 20px !important;
+}
+.search_content_result .dataTables_info{
+	height:45px;
+}
+
+.panel-heading-active{
+background-image: linear-gradient(90deg, rgba(150, 150, 150, 0) 90%, rgba(110, 110, 110, 0.12) 100%);
+}
+@media screen and (min-width: 480px) {
+	#accordion .collapse{
+		max-height:100%;
+	}
+}
+@media screen and (max-width: 480px) {
+	#hor-zebra-d{
+		max-height: 999999px;
+	}
+	
+	#accordion .collapse{
+		max-height:400px
+	}
+	
+/*
+	text-size-adjust: none;
+	#hor-zebra-d{
+		text-align: center;	
+		text-size-adjust: none;
+		line-height: 2vh;
+	}
+	
+	#hor-zebra-d td{
+		font-size: 2vw;
+		line-height: 2vh;
+		font-family:Arial, "新細明體";
+	}
+	#hor-zebra-d .odd{
+		font-size: 2vw;
+		min-width: 7vw;
+	}
+	#hor-zebra-d .odd4{
+		font-size: 2vw;
+	}*/
+}
+@media screen and (max-width: 480px) {
+	.search_content_result .dataTables_info{
+		height:45px;
+	}
+	div.dataTables_wrapper div.dataTables_info{
+		padding-top:0.5em;
+		font-size:0.8em;	
+	}	
+	.ol-popup{
+		padding:5px 2px;
+	}
+	.border_btn_f{
+		padding: 2px;
+		height:45px;			
+	}	
+	#popup-closer{
+		display:block;
+		top:1em;
+	}
+}
+</style>

@@ -1,0 +1,877 @@
+
+
+
+	<div class="row">
+		<div class="col-xs-12" >
+			<script>
+				ol2d.clearPosvectorLayerFeature();
+				ol2d.posvectorLayer.setZIndex(1000);
+			</script>
+			<table id="developmentZone_list_id" width="100%" class="table table-bordered table-striped u10_table vm table-fit" style="width:100%">
+				<thead>
+					<tr>
+						<th nowrap scope="col" class="hidden-md hidden-sm hidden-xs" style="white-space:nowrap">年度</th>
+						<th nowrap scope="col" style="white-space:nowrap"><span class="hidden-md hidden-sm hidden-xs" style="display:none">案件<br></span>狀態</th>
+						<th nowrap scope="col" style="white-space:nowrap">縣市</th>
+						<th nowrap scope="col">案件名稱</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>				
+			
+				<tr seqatr="JGL2478425065" dev-name="金門縣金城鎮第一期" status="4" lat="24.439741" lon="118.319752"  class="dev_list1"  casetype="A" style="cursor: pointer">
+					<td class="hidden-md hidden-sm hidden-xs">093&nbsp;</td>
+					<td nowrap>辦理完成</td>
+					<td nowrap>金門縣</td>
+					<td align="left">
+					金門縣金城鎮第一期
+					
+					<span class="spanb">相</span>
+					
+					
+					</td>
+					<td width="4em">
+					<input type="button" 
+						class="border_btn_b font btn-block developmentDetailCss" style="padding:2px;margin:0px"
+						value="明細" onclick="DZlist_click($(this));">
+					<input type="button" 
+						class="border_btn_b font btn-block developmentDetailCss hidden-md hidden-sm hidden-xs exkml" style="padding:2px;margin-left:0px"
+						value="匯出KML" onclick="dlDcKml('JGL2478425065');" title="">
+					</td>
+										
+					<script>
+					var htmlc='<table id="hor-zebra-e" style="width:195px;max-width: 420px;">';
+					htmlc=htmlc+'<tbody>';
+					htmlc=htmlc+'';
+					htmlc=htmlc+'<tr><td class="odd" colspan="2">金門縣 金門縣金城鎮第一期 <span class="hidden-md hidden-sm hidden-xs">區段徵收</SPAN><span class="hidden-md hidden-sm hidden-xs"> ';
+					
+					
+					
+					htmlc=htmlc+'－辦理完成';
+					
+					htmlc=htmlc+'</span></td></tr><tr lon="118.319752" lat="24.439741"><td colspan="2" class="qt-center">';					
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-1" title="範圍圖" style="margin-right: 5px;" onclick="loadDcKml(\'JGL2478425065\', \'4\', {synDpm : true});"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-2" title="導航" style="margin-right: 5px;" onclick="dcPosShowPathDialog(118.319752, 24.439741);"></a>';
+					//htmlc=htmlc+'<a href="DcDl_dlDcKml?pjId=JGL2478425065" target="_blank" class="btn-pos-5" title="匯出KML" style="margin-right: 5px;"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-6" title="明細" style="margin-right: 5px;" onclick="loadDcMain(\'JGL2478425065\',\'金門縣金城鎮第一期\');"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-7" title="影音模式" style="margin-right: 5px;" onclick="loadMeditaPage(\'JGL2478425065\',118.319752, 24.439741)"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-8" title="實價查詢" style="margin-right: 5px;" onclick="loadDcQueryPrice(\'118.319752\',\'24.439741\');"></a>';
+					//htmlc=htmlc+'<a href="./jsp/Google_Street_View.jsp?lat=24.439741&amp;lon=118.319752" target="_blank"  class="btn-pos-9"  title="街景"></a>';
+					htmlc=htmlc+'<button title="範圍圖" class="border_btn_f" onfocus="blur()" href="#" onclick="loadDcKml(\'JGL2478425065\', \'4\', {synDpm : true});"><i class="fa fa-paint-brush" aria-hidden="true"></i><span class="visible-xs">範圍</span></button>';
+					htmlc=htmlc+'<button title="導航" class="border_btn_f" onfocus="blur()" href="#" onclick="dcPosShowPathDialog(118.319752, 24.439741);"><i class="fa fa-location-arrow" aria-hidden="true"></i><span class="visible-xs">導航</span></button>';
+					htmlc=htmlc+'<a title="匯出KML：本服務需先下載安裝Google Earth軟體，詳情請見首頁說明。" href="DcDl_dlDcKml?pjId=JGL2478425065" target="_blank"><button class="border_btn_f" onfocus="blur()" href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i><span class="visible-xs">匯出</span></button></a>';
+					htmlc=htmlc+'<button title="明細"  class="border_btn_f" onfocus="blur()" href="#"  onclick="loadDcMain(\'JGL2478425065\',\'金門縣金城鎮第一期\');"><i class="fa fa-commenting-o" aria-hidden="true"></i><span class="visible-xs">明細</span></button>';
+					htmlc=htmlc+'<button title="影音模式" class="border_btn_f" onfocus="blur()" href="#" onclick="loadMeditaPage(\'JGL2478425065\',118.319752, 24.439741)"><i class="fa fa-camera" aria-hidden="true"></i><span class="visible-xs">影音</span></button>';
+					htmlc=htmlc+'<button title="實價查詢" class="border_btn_f" onfocus="blur()" href="#" onclick="showPriceQuery(this);"><i class="fa fa-usd" aria-hidden="true"></i><span class="visible-xs">實價</span></button>';
+					htmlc=htmlc+'<a title="街景" href="./jsp/Google_Street_View.jsp?lat=24.439741&amp;lon=118.319752" target="_blank"><button class="border_btn_f" onfocus="blur()" href="#"><i class="fa fa-street-view" aria-hidden="true"></i><span class="visible-xs">街景</span></button></a>';
+					htmlc=htmlc+'<button title="回查詢" class="border_btn_f" onfocus="blur()" onclick="showDevQuery();"><i class="fa fa-level-up" aria-hidden="true"> </i><span class="visible-xs">返回</span></button>';
+					htmlc=htmlc+'<span class="hidden-md hidden-sm hidden-lg"><button class="border_btn_f" onfocus="blur()" onclick=\'$(\"#popup-closer\").trigger(\"click\");\'><i class="fa fa-times" aria-hidden="true"></i><span class="visible-xs">關閉</span></button></span>';
+					htmlc=htmlc+'</td></tr></tbody></table></div>';
+					ol2d.fly2Pos({
+						'type' :'devZone',
+						'coordinates' : [ 118.319752 , 24.439741], 
+						'imgSrc' : './images/dc/icon/A_4.png' ,
+						'attrArray' : {
+							'id' : 'JGL2478425065'
+							,'htmlContent' : htmlc
+							,'1callbackUrl':'DevelopmentZone_ajax_MapPhotolist?seqid=JGL2478425065'
+							,'callback' : function(){
+				    			if ($(window).width() < 768) {
+				    				$(".ol-popup #hor-zebra-e").css({"min-width":"150px","width":"150px"});
+				    				$(".ol-popup").css({"min-width":"150px","background-color":"white"});
+				    			}
+				    			else{
+				    				$(".ol-popup #hor-zebra-e").css({"min-width":"377px"});
+				    			}								
+							}
+						} ,
+					}, {
+						"id":'JGL2478425065',
+						"label" : '',
+						"clean" : false,
+						"visible" : true,
+						"center" : true,
+						"cookie" : true,		
+						
+						
+							"name": '金門縣金門縣金城鎮第一期',
+						
+						
+						"style" : "DevIcon" , 
+					}) ; 
+					</script>					
+									
+				</tr>
+			
+				<tr seqatr="RFB2478440869" dev-name="金門縣金湖市港" status="4" lat="24.438848" lon="118.411535"  class="dev_list1"  casetype="A" style="cursor: pointer">
+					<td class="hidden-md hidden-sm hidden-xs">097&nbsp;</td>
+					<td nowrap>辦理完成</td>
+					<td nowrap>金門縣</td>
+					<td align="left">
+					金門縣金湖市港
+					
+					<span class="spanb">相</span>
+					
+					
+					</td>
+					<td width="4em">
+					<input type="button" 
+						class="border_btn_b font btn-block developmentDetailCss" style="padding:2px;margin:0px"
+						value="明細" onclick="DZlist_click($(this));">
+					<input type="button" 
+						class="border_btn_b font btn-block developmentDetailCss hidden-md hidden-sm hidden-xs exkml" style="padding:2px;margin-left:0px"
+						value="匯出KML" onclick="dlDcKml('RFB2478440869');" title="">
+					</td>
+										
+					<script>
+					var htmlc='<table id="hor-zebra-e" style="width:195px;max-width: 420px;">';
+					htmlc=htmlc+'<tbody>';
+					htmlc=htmlc+'';
+					htmlc=htmlc+'<tr><td class="odd" colspan="2">金門縣 金門縣金湖市港 <span class="hidden-md hidden-sm hidden-xs">區段徵收</SPAN><span class="hidden-md hidden-sm hidden-xs"> ';
+					
+					
+					
+					htmlc=htmlc+'－辦理完成';
+					
+					htmlc=htmlc+'</span></td></tr><tr lon="118.411535" lat="24.438848"><td colspan="2" class="qt-center">';					
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-1" title="範圍圖" style="margin-right: 5px;" onclick="loadDcKml(\'RFB2478440869\', \'4\', {synDpm : true});"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-2" title="導航" style="margin-right: 5px;" onclick="dcPosShowPathDialog(118.411535, 24.438848);"></a>';
+					//htmlc=htmlc+'<a href="DcDl_dlDcKml?pjId=RFB2478440869" target="_blank" class="btn-pos-5" title="匯出KML" style="margin-right: 5px;"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-6" title="明細" style="margin-right: 5px;" onclick="loadDcMain(\'RFB2478440869\',\'金門縣金湖市港\');"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-7" title="影音模式" style="margin-right: 5px;" onclick="loadMeditaPage(\'RFB2478440869\',118.411535, 24.438848)"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-8" title="實價查詢" style="margin-right: 5px;" onclick="loadDcQueryPrice(\'118.411535\',\'24.438848\');"></a>';
+					//htmlc=htmlc+'<a href="./jsp/Google_Street_View.jsp?lat=24.438848&amp;lon=118.411535" target="_blank"  class="btn-pos-9"  title="街景"></a>';
+					htmlc=htmlc+'<button title="範圍圖" class="border_btn_f" onfocus="blur()" href="#" onclick="loadDcKml(\'RFB2478440869\', \'4\', {synDpm : true});"><i class="fa fa-paint-brush" aria-hidden="true"></i><span class="visible-xs">範圍</span></button>';
+					htmlc=htmlc+'<button title="導航" class="border_btn_f" onfocus="blur()" href="#" onclick="dcPosShowPathDialog(118.411535, 24.438848);"><i class="fa fa-location-arrow" aria-hidden="true"></i><span class="visible-xs">導航</span></button>';
+					htmlc=htmlc+'<a title="匯出KML：本服務需先下載安裝Google Earth軟體，詳情請見首頁說明。" href="DcDl_dlDcKml?pjId=RFB2478440869" target="_blank"><button class="border_btn_f" onfocus="blur()" href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i><span class="visible-xs">匯出</span></button></a>';
+					htmlc=htmlc+'<button title="明細"  class="border_btn_f" onfocus="blur()" href="#"  onclick="loadDcMain(\'RFB2478440869\',\'金門縣金湖市港\');"><i class="fa fa-commenting-o" aria-hidden="true"></i><span class="visible-xs">明細</span></button>';
+					htmlc=htmlc+'<button title="影音模式" class="border_btn_f" onfocus="blur()" href="#" onclick="loadMeditaPage(\'RFB2478440869\',118.411535, 24.438848)"><i class="fa fa-camera" aria-hidden="true"></i><span class="visible-xs">影音</span></button>';
+					htmlc=htmlc+'<button title="實價查詢" class="border_btn_f" onfocus="blur()" href="#" onclick="showPriceQuery(this);"><i class="fa fa-usd" aria-hidden="true"></i><span class="visible-xs">實價</span></button>';
+					htmlc=htmlc+'<a title="街景" href="./jsp/Google_Street_View.jsp?lat=24.438848&amp;lon=118.411535" target="_blank"><button class="border_btn_f" onfocus="blur()" href="#"><i class="fa fa-street-view" aria-hidden="true"></i><span class="visible-xs">街景</span></button></a>';
+					htmlc=htmlc+'<button title="回查詢" class="border_btn_f" onfocus="blur()" onclick="showDevQuery();"><i class="fa fa-level-up" aria-hidden="true"> </i><span class="visible-xs">返回</span></button>';
+					htmlc=htmlc+'<span class="hidden-md hidden-sm hidden-lg"><button class="border_btn_f" onfocus="blur()" onclick=\'$(\"#popup-closer\").trigger(\"click\");\'><i class="fa fa-times" aria-hidden="true"></i><span class="visible-xs">關閉</span></button></span>';
+					htmlc=htmlc+'</td></tr></tbody></table></div>';
+					ol2d.fly2Pos({
+						'type' :'devZone',
+						'coordinates' : [ 118.411535 , 24.438848], 
+						'imgSrc' : './images/dc/icon/A_4.png' ,
+						'attrArray' : {
+							'id' : 'RFB2478440869'
+							,'htmlContent' : htmlc
+							,'1callbackUrl':'DevelopmentZone_ajax_MapPhotolist?seqid=RFB2478440869'
+							,'callback' : function(){
+				    			if ($(window).width() < 768) {
+				    				$(".ol-popup #hor-zebra-e").css({"min-width":"150px","width":"150px"});
+				    				$(".ol-popup").css({"min-width":"150px","background-color":"white"});
+				    			}
+				    			else{
+				    				$(".ol-popup #hor-zebra-e").css({"min-width":"377px"});
+				    			}								
+							}
+						} ,
+					}, {
+						"id":'RFB2478440869',
+						"label" : '',
+						"clean" : false,
+						"visible" : true,
+						"center" : true,
+						"cookie" : true,		
+						
+						
+							"name": '金門縣金門縣金湖市港',
+						
+						
+						"style" : "DevIcon" , 
+					}) ; 
+					</script>					
+									
+				</tr>
+			
+				<tr seqatr="HLR7599642006" dev-name="金門縣金沙鎮保生新村自辦市地重劃區" status="4" lat="24.495991" lon="118.413318"  class="dev_list1"  casetype="B" style="cursor: pointer">
+					<td class="hidden-md hidden-sm hidden-xs">099&nbsp;</td>
+					<td nowrap>辦理完成</td>
+					<td nowrap>金門縣</td>
+					<td align="left">
+					金門縣金沙鎮保生新村自辦市地重劃區
+					
+					<span class="spanb">相</span>
+					
+					
+					</td>
+					<td width="4em">
+					<input type="button" 
+						class="border_btn_b font btn-block developmentDetailCss" style="padding:2px;margin:0px"
+						value="明細" onclick="DZlist_click($(this));">
+					<input type="button" 
+						class="border_btn_b font btn-block developmentDetailCss hidden-md hidden-sm hidden-xs exkml" style="padding:2px;margin-left:0px"
+						value="匯出KML" onclick="dlDcKml('HLR7599642006');" title="">
+					</td>
+										
+					<script>
+					var htmlc='<table id="hor-zebra-e" style="width:195px;max-width: 420px;">';
+					htmlc=htmlc+'<tbody>';
+					htmlc=htmlc+'';
+					htmlc=htmlc+'<tr><td class="odd" colspan="2">金門縣 金門縣金沙鎮保生新村自辦市地重劃區 <span class="hidden-md hidden-sm hidden-xs">市地重劃</SPAN><span class="hidden-md hidden-sm hidden-xs"> ';
+					
+					
+					
+					htmlc=htmlc+'－辦理完成';
+					
+					htmlc=htmlc+'</span></td></tr><tr lon="118.413318" lat="24.495991"><td colspan="2" class="qt-center">';					
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-1" title="範圍圖" style="margin-right: 5px;" onclick="loadDcKml(\'HLR7599642006\', \'4\', {synDpm : true});"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-2" title="導航" style="margin-right: 5px;" onclick="dcPosShowPathDialog(118.413318, 24.495991);"></a>';
+					//htmlc=htmlc+'<a href="DcDl_dlDcKml?pjId=HLR7599642006" target="_blank" class="btn-pos-5" title="匯出KML" style="margin-right: 5px;"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-6" title="明細" style="margin-right: 5px;" onclick="loadDcMain(\'HLR7599642006\',\'金門縣金沙鎮保生新村自辦市地重劃區\');"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-7" title="影音模式" style="margin-right: 5px;" onclick="loadMeditaPage(\'HLR7599642006\',118.413318, 24.495991)"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-8" title="實價查詢" style="margin-right: 5px;" onclick="loadDcQueryPrice(\'118.413318\',\'24.495991\');"></a>';
+					//htmlc=htmlc+'<a href="./jsp/Google_Street_View.jsp?lat=24.495991&amp;lon=118.413318" target="_blank"  class="btn-pos-9"  title="街景"></a>';
+					htmlc=htmlc+'<button title="範圍圖" class="border_btn_f" onfocus="blur()" href="#" onclick="loadDcKml(\'HLR7599642006\', \'4\', {synDpm : true});"><i class="fa fa-paint-brush" aria-hidden="true"></i><span class="visible-xs">範圍</span></button>';
+					htmlc=htmlc+'<button title="導航" class="border_btn_f" onfocus="blur()" href="#" onclick="dcPosShowPathDialog(118.413318, 24.495991);"><i class="fa fa-location-arrow" aria-hidden="true"></i><span class="visible-xs">導航</span></button>';
+					htmlc=htmlc+'<a title="匯出KML：本服務需先下載安裝Google Earth軟體，詳情請見首頁說明。" href="DcDl_dlDcKml?pjId=HLR7599642006" target="_blank"><button class="border_btn_f" onfocus="blur()" href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i><span class="visible-xs">匯出</span></button></a>';
+					htmlc=htmlc+'<button title="明細"  class="border_btn_f" onfocus="blur()" href="#"  onclick="loadDcMain(\'HLR7599642006\',\'金門縣金沙鎮保生新村自辦市地重劃區\');"><i class="fa fa-commenting-o" aria-hidden="true"></i><span class="visible-xs">明細</span></button>';
+					htmlc=htmlc+'<button title="影音模式" class="border_btn_f" onfocus="blur()" href="#" onclick="loadMeditaPage(\'HLR7599642006\',118.413318, 24.495991)"><i class="fa fa-camera" aria-hidden="true"></i><span class="visible-xs">影音</span></button>';
+					htmlc=htmlc+'<button title="實價查詢" class="border_btn_f" onfocus="blur()" href="#" onclick="showPriceQuery(this);"><i class="fa fa-usd" aria-hidden="true"></i><span class="visible-xs">實價</span></button>';
+					htmlc=htmlc+'<a title="街景" href="./jsp/Google_Street_View.jsp?lat=24.495991&amp;lon=118.413318" target="_blank"><button class="border_btn_f" onfocus="blur()" href="#"><i class="fa fa-street-view" aria-hidden="true"></i><span class="visible-xs">街景</span></button></a>';
+					htmlc=htmlc+'<button title="回查詢" class="border_btn_f" onfocus="blur()" onclick="showDevQuery();"><i class="fa fa-level-up" aria-hidden="true"> </i><span class="visible-xs">返回</span></button>';
+					htmlc=htmlc+'<span class="hidden-md hidden-sm hidden-lg"><button class="border_btn_f" onfocus="blur()" onclick=\'$(\"#popup-closer\").trigger(\"click\");\'><i class="fa fa-times" aria-hidden="true"></i><span class="visible-xs">關閉</span></button></span>';
+					htmlc=htmlc+'</td></tr></tbody></table></div>';
+					ol2d.fly2Pos({
+						'type' :'devZone',
+						'coordinates' : [ 118.413318 , 24.495991], 
+						'imgSrc' : './images/dc/icon/B_4.png' ,
+						'attrArray' : {
+							'id' : 'HLR7599642006'
+							,'htmlContent' : htmlc
+							,'1callbackUrl':'DevelopmentZone_ajax_MapPhotolist?seqid=HLR7599642006'
+							,'callback' : function(){
+				    			if ($(window).width() < 768) {
+				    				$(".ol-popup #hor-zebra-e").css({"min-width":"150px","width":"150px"});
+				    				$(".ol-popup").css({"min-width":"150px","background-color":"white"});
+				    			}
+				    			else{
+				    				$(".ol-popup #hor-zebra-e").css({"min-width":"377px"});
+				    			}								
+							}
+						} ,
+					}, {
+						"id":'HLR7599642006',
+						"label" : '',
+						"clean" : false,
+						"visible" : true,
+						"center" : true,
+						"cookie" : true,		
+						
+						
+							"name": '金門縣金門縣金沙鎮保生新村自辦市地重劃區',
+						
+						
+						"style" : "DevIcon" , 
+					}) ; 
+					</script>					
+									
+				</tr>
+			
+				<tr seqatr="VEV2479502280" dev-name="金門大橋烈嶼端" status="3" lat="24.444491" lon="118.258075"  class="dev_list1"  casetype="A" style="cursor: pointer">
+					<td class="hidden-md hidden-sm hidden-xs">102&nbsp;</td>
+					<td nowrap>辦理中</td>
+					<td nowrap>金門縣</td>
+					<td align="left">
+					金門大橋烈嶼端
+					
+					<span class="spanb">相</span>
+					
+					
+					</td>
+					<td width="4em">
+					<input type="button" 
+						class="border_btn_b font btn-block developmentDetailCss" style="padding:2px;margin:0px"
+						value="明細" onclick="DZlist_click($(this));">
+					<input type="button" 
+						class="border_btn_b font btn-block developmentDetailCss hidden-md hidden-sm hidden-xs exkml" style="padding:2px;margin-left:0px"
+						value="匯出KML" onclick="dlDcKml('VEV2479502280');" title="">
+					</td>
+										
+					<script>
+					var htmlc='<table id="hor-zebra-e" style="width:195px;max-width: 420px;">';
+					htmlc=htmlc+'<tbody>';
+					htmlc=htmlc+'';
+					htmlc=htmlc+'<tr><td class="odd" colspan="2">金門縣 金門大橋烈嶼端 <span class="hidden-md hidden-sm hidden-xs">區段徵收</SPAN><span class="hidden-md hidden-sm hidden-xs"> ';
+					
+					
+					htmlc=htmlc+'－辦理中';
+					
+					
+					htmlc=htmlc+'</span></td></tr><tr lon="118.258075" lat="24.444491"><td colspan="2" class="qt-center">';					
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-1" title="範圍圖" style="margin-right: 5px;" onclick="loadDcKml(\'VEV2479502280\', \'3\', {synDpm : true});"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-2" title="導航" style="margin-right: 5px;" onclick="dcPosShowPathDialog(118.258075, 24.444491);"></a>';
+					//htmlc=htmlc+'<a href="DcDl_dlDcKml?pjId=VEV2479502280" target="_blank" class="btn-pos-5" title="匯出KML" style="margin-right: 5px;"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-6" title="明細" style="margin-right: 5px;" onclick="loadDcMain(\'VEV2479502280\',\'金門大橋烈嶼端\');"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-7" title="影音模式" style="margin-right: 5px;" onclick="loadMeditaPage(\'VEV2479502280\',118.258075, 24.444491)"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-8" title="實價查詢" style="margin-right: 5px;" onclick="loadDcQueryPrice(\'118.258075\',\'24.444491\');"></a>';
+					//htmlc=htmlc+'<a href="./jsp/Google_Street_View.jsp?lat=24.444491&amp;lon=118.258075" target="_blank"  class="btn-pos-9"  title="街景"></a>';
+					htmlc=htmlc+'<button title="範圍圖" class="border_btn_f" onfocus="blur()" href="#" onclick="loadDcKml(\'VEV2479502280\', \'3\', {synDpm : true});"><i class="fa fa-paint-brush" aria-hidden="true"></i><span class="visible-xs">範圍</span></button>';
+					htmlc=htmlc+'<button title="導航" class="border_btn_f" onfocus="blur()" href="#" onclick="dcPosShowPathDialog(118.258075, 24.444491);"><i class="fa fa-location-arrow" aria-hidden="true"></i><span class="visible-xs">導航</span></button>';
+					htmlc=htmlc+'<a title="匯出KML：本服務需先下載安裝Google Earth軟體，詳情請見首頁說明。" href="DcDl_dlDcKml?pjId=VEV2479502280" target="_blank"><button class="border_btn_f" onfocus="blur()" href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i><span class="visible-xs">匯出</span></button></a>';
+					htmlc=htmlc+'<button title="明細"  class="border_btn_f" onfocus="blur()" href="#"  onclick="loadDcMain(\'VEV2479502280\',\'金門大橋烈嶼端\');"><i class="fa fa-commenting-o" aria-hidden="true"></i><span class="visible-xs">明細</span></button>';
+					htmlc=htmlc+'<button title="影音模式" class="border_btn_f" onfocus="blur()" href="#" onclick="loadMeditaPage(\'VEV2479502280\',118.258075, 24.444491)"><i class="fa fa-camera" aria-hidden="true"></i><span class="visible-xs">影音</span></button>';
+					htmlc=htmlc+'<button title="實價查詢" class="border_btn_f" onfocus="blur()" href="#" onclick="showPriceQuery(this);"><i class="fa fa-usd" aria-hidden="true"></i><span class="visible-xs">實價</span></button>';
+					htmlc=htmlc+'<a title="街景" href="./jsp/Google_Street_View.jsp?lat=24.444491&amp;lon=118.258075" target="_blank"><button class="border_btn_f" onfocus="blur()" href="#"><i class="fa fa-street-view" aria-hidden="true"></i><span class="visible-xs">街景</span></button></a>';
+					htmlc=htmlc+'<button title="回查詢" class="border_btn_f" onfocus="blur()" onclick="showDevQuery();"><i class="fa fa-level-up" aria-hidden="true"> </i><span class="visible-xs">返回</span></button>';
+					htmlc=htmlc+'<span class="hidden-md hidden-sm hidden-lg"><button class="border_btn_f" onfocus="blur()" onclick=\'$(\"#popup-closer\").trigger(\"click\");\'><i class="fa fa-times" aria-hidden="true"></i><span class="visible-xs">關閉</span></button></span>';
+					htmlc=htmlc+'</td></tr></tbody></table></div>';
+					ol2d.fly2Pos({
+						'type' :'devZone',
+						'coordinates' : [ 118.258075 , 24.444491], 
+						'imgSrc' : './images/dc/icon/A_3.png' ,
+						'attrArray' : {
+							'id' : 'VEV2479502280'
+							,'htmlContent' : htmlc
+							,'1callbackUrl':'DevelopmentZone_ajax_MapPhotolist?seqid=VEV2479502280'
+							,'callback' : function(){
+				    			if ($(window).width() < 768) {
+				    				$(".ol-popup #hor-zebra-e").css({"min-width":"150px","width":"150px"});
+				    				$(".ol-popup").css({"min-width":"150px","background-color":"white"});
+				    			}
+				    			else{
+				    				$(".ol-popup #hor-zebra-e").css({"min-width":"377px"});
+				    			}								
+							}
+						} ,
+					}, {
+						"id":'VEV2479502280',
+						"label" : '',
+						"clean" : false,
+						"visible" : true,
+						"center" : true,
+						"cookie" : true,		
+						
+						
+							"name": '金門縣金門大橋烈嶼端',
+						
+						
+						"style" : "DevIcon" , 
+					}) ; 
+					</script>					
+									
+				</tr>
+			
+				<tr seqatr="CHV2479487521" dev-name="金門大橋金寧端" status="4" lat="24.452415" lon="118.306453"  class="dev_list1"  casetype="A" style="cursor: pointer">
+					<td class="hidden-md hidden-sm hidden-xs">102&nbsp;</td>
+					<td nowrap>辦理完成</td>
+					<td nowrap>金門縣</td>
+					<td align="left">
+					金門大橋金寧端
+					
+					<span class="spanb">相</span>
+					
+					
+					</td>
+					<td width="4em">
+					<input type="button" 
+						class="border_btn_b font btn-block developmentDetailCss" style="padding:2px;margin:0px"
+						value="明細" onclick="DZlist_click($(this));">
+					<input type="button" 
+						class="border_btn_b font btn-block developmentDetailCss hidden-md hidden-sm hidden-xs exkml" style="padding:2px;margin-left:0px"
+						value="匯出KML" onclick="dlDcKml('CHV2479487521');" title="">
+					</td>
+										
+					<script>
+					var htmlc='<table id="hor-zebra-e" style="width:195px;max-width: 420px;">';
+					htmlc=htmlc+'<tbody>';
+					htmlc=htmlc+'';
+					htmlc=htmlc+'<tr><td class="odd" colspan="2">金門縣 金門大橋金寧端 <span class="hidden-md hidden-sm hidden-xs">區段徵收</SPAN><span class="hidden-md hidden-sm hidden-xs"> ';
+					
+					
+					
+					htmlc=htmlc+'－辦理完成';
+					
+					htmlc=htmlc+'</span></td></tr><tr lon="118.306453" lat="24.452415"><td colspan="2" class="qt-center">';					
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-1" title="範圍圖" style="margin-right: 5px;" onclick="loadDcKml(\'CHV2479487521\', \'4\', {synDpm : true});"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-2" title="導航" style="margin-right: 5px;" onclick="dcPosShowPathDialog(118.306453, 24.452415);"></a>';
+					//htmlc=htmlc+'<a href="DcDl_dlDcKml?pjId=CHV2479487521" target="_blank" class="btn-pos-5" title="匯出KML" style="margin-right: 5px;"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-6" title="明細" style="margin-right: 5px;" onclick="loadDcMain(\'CHV2479487521\',\'金門大橋金寧端\');"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-7" title="影音模式" style="margin-right: 5px;" onclick="loadMeditaPage(\'CHV2479487521\',118.306453, 24.452415)"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-8" title="實價查詢" style="margin-right: 5px;" onclick="loadDcQueryPrice(\'118.306453\',\'24.452415\');"></a>';
+					//htmlc=htmlc+'<a href="./jsp/Google_Street_View.jsp?lat=24.452415&amp;lon=118.306453" target="_blank"  class="btn-pos-9"  title="街景"></a>';
+					htmlc=htmlc+'<button title="範圍圖" class="border_btn_f" onfocus="blur()" href="#" onclick="loadDcKml(\'CHV2479487521\', \'4\', {synDpm : true});"><i class="fa fa-paint-brush" aria-hidden="true"></i><span class="visible-xs">範圍</span></button>';
+					htmlc=htmlc+'<button title="導航" class="border_btn_f" onfocus="blur()" href="#" onclick="dcPosShowPathDialog(118.306453, 24.452415);"><i class="fa fa-location-arrow" aria-hidden="true"></i><span class="visible-xs">導航</span></button>';
+					htmlc=htmlc+'<a title="匯出KML：本服務需先下載安裝Google Earth軟體，詳情請見首頁說明。" href="DcDl_dlDcKml?pjId=CHV2479487521" target="_blank"><button class="border_btn_f" onfocus="blur()" href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i><span class="visible-xs">匯出</span></button></a>';
+					htmlc=htmlc+'<button title="明細"  class="border_btn_f" onfocus="blur()" href="#"  onclick="loadDcMain(\'CHV2479487521\',\'金門大橋金寧端\');"><i class="fa fa-commenting-o" aria-hidden="true"></i><span class="visible-xs">明細</span></button>';
+					htmlc=htmlc+'<button title="影音模式" class="border_btn_f" onfocus="blur()" href="#" onclick="loadMeditaPage(\'CHV2479487521\',118.306453, 24.452415)"><i class="fa fa-camera" aria-hidden="true"></i><span class="visible-xs">影音</span></button>';
+					htmlc=htmlc+'<button title="實價查詢" class="border_btn_f" onfocus="blur()" href="#" onclick="showPriceQuery(this);"><i class="fa fa-usd" aria-hidden="true"></i><span class="visible-xs">實價</span></button>';
+					htmlc=htmlc+'<a title="街景" href="./jsp/Google_Street_View.jsp?lat=24.452415&amp;lon=118.306453" target="_blank"><button class="border_btn_f" onfocus="blur()" href="#"><i class="fa fa-street-view" aria-hidden="true"></i><span class="visible-xs">街景</span></button></a>';
+					htmlc=htmlc+'<button title="回查詢" class="border_btn_f" onfocus="blur()" onclick="showDevQuery();"><i class="fa fa-level-up" aria-hidden="true"> </i><span class="visible-xs">返回</span></button>';
+					htmlc=htmlc+'<span class="hidden-md hidden-sm hidden-lg"><button class="border_btn_f" onfocus="blur()" onclick=\'$(\"#popup-closer\").trigger(\"click\");\'><i class="fa fa-times" aria-hidden="true"></i><span class="visible-xs">關閉</span></button></span>';
+					htmlc=htmlc+'</td></tr></tbody></table></div>';
+					ol2d.fly2Pos({
+						'type' :'devZone',
+						'coordinates' : [ 118.306453 , 24.452415], 
+						'imgSrc' : './images/dc/icon/A_4.png' ,
+						'attrArray' : {
+							'id' : 'CHV2479487521'
+							,'htmlContent' : htmlc
+							,'1callbackUrl':'DevelopmentZone_ajax_MapPhotolist?seqid=CHV2479487521'
+							,'callback' : function(){
+				    			if ($(window).width() < 768) {
+				    				$(".ol-popup #hor-zebra-e").css({"min-width":"150px","width":"150px"});
+				    				$(".ol-popup").css({"min-width":"150px","background-color":"white"});
+				    			}
+				    			else{
+				    				$(".ol-popup #hor-zebra-e").css({"min-width":"377px"});
+				    			}								
+							}
+						} ,
+					}, {
+						"id":'CHV2479487521',
+						"label" : '',
+						"clean" : false,
+						"visible" : true,
+						"center" : true,
+						"cookie" : true,		
+						
+						
+							"name": '金門縣金門大橋金寧端',
+						
+						
+						"style" : "DevIcon" , 
+					}) ; 
+					</script>					
+									
+				</tr>
+			
+				<tr seqatr="HKO5355091685" dev-name="金門縣尚義" status="4" lat="24.443438" lon="118.378118"  class="dev_list1"  casetype="A" style="cursor: pointer">
+					<td class="hidden-md hidden-sm hidden-xs">104&nbsp;</td>
+					<td nowrap>辦理完成</td>
+					<td nowrap>金門縣</td>
+					<td align="left">
+					金門縣尚義
+					
+					<span class="spanb">相</span>
+					
+					
+					</td>
+					<td width="4em">
+					<input type="button" 
+						class="border_btn_b font btn-block developmentDetailCss" style="padding:2px;margin:0px"
+						value="明細" onclick="DZlist_click($(this));">
+					<input type="button" 
+						class="border_btn_b font btn-block developmentDetailCss hidden-md hidden-sm hidden-xs exkml" style="padding:2px;margin-left:0px"
+						value="匯出KML" onclick="dlDcKml('HKO5355091685');" title="">
+					</td>
+										
+					<script>
+					var htmlc='<table id="hor-zebra-e" style="width:195px;max-width: 420px;">';
+					htmlc=htmlc+'<tbody>';
+					htmlc=htmlc+'';
+					htmlc=htmlc+'<tr><td class="odd" colspan="2">金門縣 金門縣尚義 <span class="hidden-md hidden-sm hidden-xs">區段徵收</SPAN><span class="hidden-md hidden-sm hidden-xs"> ';
+					
+					
+					
+					htmlc=htmlc+'－辦理完成';
+					
+					htmlc=htmlc+'</span></td></tr><tr lon="118.378118" lat="24.443438"><td colspan="2" class="qt-center">';					
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-1" title="範圍圖" style="margin-right: 5px;" onclick="loadDcKml(\'HKO5355091685\', \'4\', {synDpm : true});"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-2" title="導航" style="margin-right: 5px;" onclick="dcPosShowPathDialog(118.378118, 24.443438);"></a>';
+					//htmlc=htmlc+'<a href="DcDl_dlDcKml?pjId=HKO5355091685" target="_blank" class="btn-pos-5" title="匯出KML" style="margin-right: 5px;"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-6" title="明細" style="margin-right: 5px;" onclick="loadDcMain(\'HKO5355091685\',\'金門縣尚義\');"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-7" title="影音模式" style="margin-right: 5px;" onclick="loadMeditaPage(\'HKO5355091685\',118.378118, 24.443438)"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-8" title="實價查詢" style="margin-right: 5px;" onclick="loadDcQueryPrice(\'118.378118\',\'24.443438\');"></a>';
+					//htmlc=htmlc+'<a href="./jsp/Google_Street_View.jsp?lat=24.443438&amp;lon=118.378118" target="_blank"  class="btn-pos-9"  title="街景"></a>';
+					htmlc=htmlc+'<button title="範圍圖" class="border_btn_f" onfocus="blur()" href="#" onclick="loadDcKml(\'HKO5355091685\', \'4\', {synDpm : true});"><i class="fa fa-paint-brush" aria-hidden="true"></i><span class="visible-xs">範圍</span></button>';
+					htmlc=htmlc+'<button title="導航" class="border_btn_f" onfocus="blur()" href="#" onclick="dcPosShowPathDialog(118.378118, 24.443438);"><i class="fa fa-location-arrow" aria-hidden="true"></i><span class="visible-xs">導航</span></button>';
+					htmlc=htmlc+'<a title="匯出KML：本服務需先下載安裝Google Earth軟體，詳情請見首頁說明。" href="DcDl_dlDcKml?pjId=HKO5355091685" target="_blank"><button class="border_btn_f" onfocus="blur()" href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i><span class="visible-xs">匯出</span></button></a>';
+					htmlc=htmlc+'<button title="明細"  class="border_btn_f" onfocus="blur()" href="#"  onclick="loadDcMain(\'HKO5355091685\',\'金門縣尚義\');"><i class="fa fa-commenting-o" aria-hidden="true"></i><span class="visible-xs">明細</span></button>';
+					htmlc=htmlc+'<button title="影音模式" class="border_btn_f" onfocus="blur()" href="#" onclick="loadMeditaPage(\'HKO5355091685\',118.378118, 24.443438)"><i class="fa fa-camera" aria-hidden="true"></i><span class="visible-xs">影音</span></button>';
+					htmlc=htmlc+'<button title="實價查詢" class="border_btn_f" onfocus="blur()" href="#" onclick="showPriceQuery(this);"><i class="fa fa-usd" aria-hidden="true"></i><span class="visible-xs">實價</span></button>';
+					htmlc=htmlc+'<a title="街景" href="./jsp/Google_Street_View.jsp?lat=24.443438&amp;lon=118.378118" target="_blank"><button class="border_btn_f" onfocus="blur()" href="#"><i class="fa fa-street-view" aria-hidden="true"></i><span class="visible-xs">街景</span></button></a>';
+					htmlc=htmlc+'<button title="回查詢" class="border_btn_f" onfocus="blur()" onclick="showDevQuery();"><i class="fa fa-level-up" aria-hidden="true"> </i><span class="visible-xs">返回</span></button>';
+					htmlc=htmlc+'<span class="hidden-md hidden-sm hidden-lg"><button class="border_btn_f" onfocus="blur()" onclick=\'$(\"#popup-closer\").trigger(\"click\");\'><i class="fa fa-times" aria-hidden="true"></i><span class="visible-xs">關閉</span></button></span>';
+					htmlc=htmlc+'</td></tr></tbody></table></div>';
+					ol2d.fly2Pos({
+						'type' :'devZone',
+						'coordinates' : [ 118.378118 , 24.443438], 
+						'imgSrc' : './images/dc/icon/A_4.png' ,
+						'attrArray' : {
+							'id' : 'HKO5355091685'
+							,'htmlContent' : htmlc
+							,'1callbackUrl':'DevelopmentZone_ajax_MapPhotolist?seqid=HKO5355091685'
+							,'callback' : function(){
+				    			if ($(window).width() < 768) {
+				    				$(".ol-popup #hor-zebra-e").css({"min-width":"150px","width":"150px"});
+				    				$(".ol-popup").css({"min-width":"150px","background-color":"white"});
+				    			}
+				    			else{
+				    				$(".ol-popup #hor-zebra-e").css({"min-width":"377px"});
+				    			}								
+							}
+						} ,
+					}, {
+						"id":'HKO5355091685',
+						"label" : '',
+						"clean" : false,
+						"visible" : true,
+						"center" : true,
+						"cookie" : true,		
+						
+						
+							"name": '金門縣金門縣尚義',
+						
+						
+						"style" : "DevIcon" , 
+					}) ; 
+					</script>					
+									
+				</tr>
+			
+				<tr seqatr="HJL4037827066" dev-name="烈嶼國中周邊地區市地重劃" status="4" lat="24.431307" lon="118.240845"  class="dev_list1"  casetype="B" style="cursor: pointer">
+					<td class="hidden-md hidden-sm hidden-xs">105&nbsp;</td>
+					<td nowrap>辦理完成</td>
+					<td nowrap>金門縣</td>
+					<td align="left">
+					烈嶼國中周邊地區市地重劃
+					
+					<span class="spanb">相</span>
+					
+					
+					</td>
+					<td width="4em">
+					<input type="button" 
+						class="border_btn_b font btn-block developmentDetailCss" style="padding:2px;margin:0px"
+						value="明細" onclick="DZlist_click($(this));">
+					<input type="button" 
+						class="border_btn_b font btn-block developmentDetailCss hidden-md hidden-sm hidden-xs exkml" style="padding:2px;margin-left:0px"
+						value="匯出KML" onclick="dlDcKml('HJL4037827066');" title="">
+					</td>
+										
+					<script>
+					var htmlc='<table id="hor-zebra-e" style="width:195px;max-width: 420px;">';
+					htmlc=htmlc+'<tbody>';
+					htmlc=htmlc+'';
+					htmlc=htmlc+'<tr><td class="odd" colspan="2">金門縣 烈嶼國中周邊地區市地重劃 <span class="hidden-md hidden-sm hidden-xs">市地重劃</SPAN><span class="hidden-md hidden-sm hidden-xs"> ';
+					
+					
+					
+					htmlc=htmlc+'－辦理完成';
+					
+					htmlc=htmlc+'</span></td></tr><tr lon="118.240845" lat="24.431307"><td colspan="2" class="qt-center">';					
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-1" title="範圍圖" style="margin-right: 5px;" onclick="loadDcKml(\'HJL4037827066\', \'4\', {synDpm : true});"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-2" title="導航" style="margin-right: 5px;" onclick="dcPosShowPathDialog(118.240845, 24.431307);"></a>';
+					//htmlc=htmlc+'<a href="DcDl_dlDcKml?pjId=HJL4037827066" target="_blank" class="btn-pos-5" title="匯出KML" style="margin-right: 5px;"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-6" title="明細" style="margin-right: 5px;" onclick="loadDcMain(\'HJL4037827066\',\'烈嶼國中周邊地區市地重劃\');"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-7" title="影音模式" style="margin-right: 5px;" onclick="loadMeditaPage(\'HJL4037827066\',118.240845, 24.431307)"></a>';
+					//htmlc=htmlc+'<a href="javascript: void(0);" class="btn-pos-8" title="實價查詢" style="margin-right: 5px;" onclick="loadDcQueryPrice(\'118.240845\',\'24.431307\');"></a>';
+					//htmlc=htmlc+'<a href="./jsp/Google_Street_View.jsp?lat=24.431307&amp;lon=118.240845" target="_blank"  class="btn-pos-9"  title="街景"></a>';
+					htmlc=htmlc+'<button title="範圍圖" class="border_btn_f" onfocus="blur()" href="#" onclick="loadDcKml(\'HJL4037827066\', \'4\', {synDpm : true});"><i class="fa fa-paint-brush" aria-hidden="true"></i><span class="visible-xs">範圍</span></button>';
+					htmlc=htmlc+'<button title="導航" class="border_btn_f" onfocus="blur()" href="#" onclick="dcPosShowPathDialog(118.240845, 24.431307);"><i class="fa fa-location-arrow" aria-hidden="true"></i><span class="visible-xs">導航</span></button>';
+					htmlc=htmlc+'<a title="匯出KML：本服務需先下載安裝Google Earth軟體，詳情請見首頁說明。" href="DcDl_dlDcKml?pjId=HJL4037827066" target="_blank"><button class="border_btn_f" onfocus="blur()" href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i><span class="visible-xs">匯出</span></button></a>';
+					htmlc=htmlc+'<button title="明細"  class="border_btn_f" onfocus="blur()" href="#"  onclick="loadDcMain(\'HJL4037827066\',\'烈嶼國中周邊地區市地重劃\');"><i class="fa fa-commenting-o" aria-hidden="true"></i><span class="visible-xs">明細</span></button>';
+					htmlc=htmlc+'<button title="影音模式" class="border_btn_f" onfocus="blur()" href="#" onclick="loadMeditaPage(\'HJL4037827066\',118.240845, 24.431307)"><i class="fa fa-camera" aria-hidden="true"></i><span class="visible-xs">影音</span></button>';
+					htmlc=htmlc+'<button title="實價查詢" class="border_btn_f" onfocus="blur()" href="#" onclick="showPriceQuery(this);"><i class="fa fa-usd" aria-hidden="true"></i><span class="visible-xs">實價</span></button>';
+					htmlc=htmlc+'<a title="街景" href="./jsp/Google_Street_View.jsp?lat=24.431307&amp;lon=118.240845" target="_blank"><button class="border_btn_f" onfocus="blur()" href="#"><i class="fa fa-street-view" aria-hidden="true"></i><span class="visible-xs">街景</span></button></a>';
+					htmlc=htmlc+'<button title="回查詢" class="border_btn_f" onfocus="blur()" onclick="showDevQuery();"><i class="fa fa-level-up" aria-hidden="true"> </i><span class="visible-xs">返回</span></button>';
+					htmlc=htmlc+'<span class="hidden-md hidden-sm hidden-lg"><button class="border_btn_f" onfocus="blur()" onclick=\'$(\"#popup-closer\").trigger(\"click\");\'><i class="fa fa-times" aria-hidden="true"></i><span class="visible-xs">關閉</span></button></span>';
+					htmlc=htmlc+'</td></tr></tbody></table></div>';
+					ol2d.fly2Pos({
+						'type' :'devZone',
+						'coordinates' : [ 118.240845 , 24.431307], 
+						'imgSrc' : './images/dc/icon/B_4.png' ,
+						'attrArray' : {
+							'id' : 'HJL4037827066'
+							,'htmlContent' : htmlc
+							,'1callbackUrl':'DevelopmentZone_ajax_MapPhotolist?seqid=HJL4037827066'
+							,'callback' : function(){
+				    			if ($(window).width() < 768) {
+				    				$(".ol-popup #hor-zebra-e").css({"min-width":"150px","width":"150px"});
+				    				$(".ol-popup").css({"min-width":"150px","background-color":"white"});
+				    			}
+				    			else{
+				    				$(".ol-popup #hor-zebra-e").css({"min-width":"377px"});
+				    			}								
+							}
+						} ,
+					}, {
+						"id":'HJL4037827066',
+						"label" : '',
+						"clean" : false,
+						"visible" : true,
+						"center" : true,
+						"cookie" : true,		
+						
+						
+							"name": '金門縣烈嶼國中周邊地區市地重劃',
+						
+						
+						"style" : "DevIcon" , 
+					}) ; 
+					</script>					
+									
+				</tr>
+			
+				</tbody>
+			</table>
+			<!-- <input type="button" class="btn btn-primary font"  value="回條件" id="" onclick='collapsedDown($("#dev_query_panel")); '> -->
+		</div>
+	</div>
+
+<script>
+var devname,devstatus;
+var table;
+	$(function() {	
+		$(".exkml").attr('title',dchelp2);
+		$("#dev_query_panel").trigger('click');
+		$("#page-content-wrapper").fadeIn();
+		//loadDcKml('GKG8809015991');
+		ol2d.addSelectInteraction();
+			
+		setTimeout(function(){ initDataTable();}, 300);
+		
+		$("#developmentZone_list_id tbody").on('click', 'tr',function() {				
+			var jqTr = $(this).closest("tr");
+			//alert(jqTr.attr("lon"));
+			if(jqTr.attr("lon")!="" && jqTr.attr("lat")!=""){
+				ol2d.setCenter(parseFloat(jqTr.attr("lon")),parseFloat(jqTr.attr("lat")));
+				ol2d.setZoom(12);
+			}
+		});
+	});
+	
+	
+	
+	
+	
+	
+	/**
+	 * 下載開發案件範圍圖KML。
+	 */
+	function dlDcKml(pjId) {
+		if(pjId==null) {
+			console.log("請指定案件ID");
+			return;
+		}
+		var mydata = {
+			"pjId" : pjId
+		};
+		var opt = {
+				"url" : "./DcDl_dlDcKml",
+				"data" : mydata,
+				"done" : null,
+				"fail" : function(){alert("尚未編輯開發區範圍圖!")},
+				"quiet" : false
+		};	
+		qtAjax.dlAtt(opt);
+	}
+	
+	
+	function initDataTable(){		
+		var sheight=$(document).height()-270;
+		calcModalBody();
+		var opt ={
+	 			language : {  
+					info: "顯示 _START_ 至 _END_ 筆  (查詢結果 : _TOTAL_ 筆) <input type=\"button\" style=\"padding-top:0.2em;padding-bottom:0.1em;\" class=\"btn btn-primary font\"  value=\"地圖\" id=\"\" onclick='$(\"#developmentZoneModal .close\").click(); '>" ,
+					emptyTable : "無資料" ,
+					infoEmpty: "顯示  0 筆資料",
+				},
+				info : true, 
+	            deferRender:    true,
+	            scrollY:        sheight,
+	            scrollCollapse: true,
+	            scroller:       true,
+	            paging: true, 
+	            autoWidth: false,
+	            "lengthChange" : false, 
+	            "iDisplayLength": 10,
+	            searching : false,
+	            "order": [[ 0, "desc" ]],
+	            ordering: true,	            
+	            columnDefs: [{
+	            	"targets": 4,
+	            	"orderable": false,
+	            	
+	            },{ targets: [ 1 ],orderData: [ 1, 0 ]}],
+	 	    	dom:"<'row'<'col-sm-4'i><'col-sm-4'f><'col-sm-4'p>>" +
+		    	"<'row'<'col-sm-12'tr>>" ,
+		    } 
+//		qtCommon.dataTables('developmentZone_list_id' , opt) ;		
+		table=qtCommon.dataTablesScroller('developmentZone_list_id' , opt) ;
+		setTimeout(function() { table.draw(true); }, 500);
+		$('.dataTables_scrollBody').unbind('scroll');
+		$('.dataTables_scrollBody').on('scroll', function() {
+		    if(!$("#dev_query_panel").hasClass("panel-collapsed")){
+		    	$("#dev_query_panel").trigger('click');		    	
+		    }
+		});
+		$('#tab_d1').scrollTop(150);		
+		$("#btn_developmentZone_search_id").show();
+		/*
+		var features = ol2d.posvectorLayer.getSource().getFeatures();
+		var collection = ol2d.select.getFeatures();
+		for (var i = 0, len = features.length; i < len; i++) {
+			var pos_type = features[i].get("pos_type");
+			console.log("features:"+pos_type); 
+			
+		}
+		//collection.push(features[0]);
+		ol2d.select.dispatchEvent({
+			  type: 'select',
+			  selected: [features[0]],
+			  deselected: []
+			});
+		*/
+	}
+	
+	
+	
+	function showPriceQuery(obj){		 
+		var jqTr = $(obj).closest("tr");
+		if(jqTr.attr("lon")!="" && jqTr.attr("lat")!=""){
+			ol2d.setCenter(parseFloat(jqTr.attr("lon")),parseFloat(jqTr.attr("lat")));
+			ol2d.setZoom(12);
+		}
+		//$("#queryPriceModal").showStackedModal();
+		showTopModalAndHideElse("queryPriceModal");
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</script>
+<style>
+#developmentZoneResultId .dataTables_paginate {
+	display: none;
+}
+
+.u10_table .dataTables_scrollHeadInner {
+	width: 100%;
+}
+
+.dev_list1 td {
+	vertical-align: middle !important;
+	padding: 4px !important;
+}
+
+.dataTables_scrollBody {
+	overflow-x: hidden !important;
+	min-height: 80px;
+}
+
+/* dataTables CSS modification & positioning */
+table.dataTable thead .sorting:before,table.dataTable thead .sorting_asc:before,table.dataTable thead .sorting_desc:before,table.dataTable thead .sorting_asc_disabled:before,table.dataTable thead .sorting_desc_disabled:before
+	{
+	font-family: FontAwesome;
+	content: "\f0dc";
+	right: 0.5em;
+	bottom: 0.5em;
+}
+
+table.dataTable thead th {
+	background-image: none !important;
+}
+
+table.dataTable thead .sorting_asc:before,table.dataTable thead .sorting_desc:after
+	{
+	opacity: 0.3
+}
+
+table.dataTable thead th.sorting:after,table.dataTable thead th.sorting_asc:after,table.dataTable thead th.sorting_desc:after
+	{
+	display: block;
+	font-family: FontAwesome;
+	content: "\f0de";
+}
+
+table.dataTable thead th.sorting:after {
+	content: "\f0de";
+	color: #ddd;
+}
+
+table.dataTable thead th.sorting_asc:after {
+	content: "\f0de";
+	right: 0.5em;
+	bottom: 0.5em;
+	opacity: 1;
+}
+
+table.dataTable thead th.sorting_desc:after {
+	content: "\f0dd";
+	right: 0.5em;
+	bottom: 0.5em;
+	opacity: 1;
+}
+
+.u10_table  thead>tr>th.sorting {
+	padding-right: 20px !important;
+}
+
+.u10_table thead > tr > th.sorting_asc,.u10_table thead > tr > th.sorting_desc{
+	padding-right: 20px !important;
+}
+.search_content_result .dataTables_info{
+	height:45px;
+}
+
+.panel-heading-active{
+background-image: linear-gradient(90deg, rgba(150, 150, 150, 0) 90%, rgba(110, 110, 110, 0.12) 100%);
+}
+@media screen and (min-width: 480px) {
+	#accordion .collapse{
+		max-height:100%;
+	}
+}
+@media screen and (max-width: 480px) {
+	#hor-zebra-d{
+		max-height: 999999px;
+	}
+	
+	#accordion .collapse{
+		max-height:400px
+	}
+	
+/*
+	text-size-adjust: none;
+	#hor-zebra-d{
+		text-align: center;	
+		text-size-adjust: none;
+		line-height: 2vh;
+	}
+	
+	#hor-zebra-d td{
+		font-size: 2vw;
+		line-height: 2vh;
+		font-family:Arial, "新細明體";
+	}
+	#hor-zebra-d .odd{
+		font-size: 2vw;
+		min-width: 7vw;
+	}
+	#hor-zebra-d .odd4{
+		font-size: 2vw;
+	}*/
+}
+@media screen and (max-width: 480px) {
+	.search_content_result .dataTables_info{
+		height:45px;
+	}
+	div.dataTables_wrapper div.dataTables_info{
+		padding-top:0.5em;
+		font-size:0.8em;	
+	}	
+	.ol-popup{
+		padding:5px 2px;
+	}
+	.border_btn_f{
+		padding: 2px;
+		height:45px;			
+	}	
+	#popup-closer{
+		display:block;
+		top:1em;
+	}
+}
+</style>
